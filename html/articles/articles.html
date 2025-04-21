@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script src="./articlesCard.js"></script>
+        <script>
+            const conteiner = document.getElementById("news__container");
+
+            newsdata.forEach((item) => {
+                const card = document.createElement("div");
+                card.classList.add("news__card");
+                card.innerHTML = `
+            <h2>${item.title}</h2>
+            <p>${item.content}</p>
+            <a href="articles.html?id=${item.id}">Read More</a>
+            `;
+            });
+        </script>
+    </body>
+</html>

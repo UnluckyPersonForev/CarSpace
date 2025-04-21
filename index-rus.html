@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Автосервис</title>
+        <link rel="stylesheet" href="/index/index.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+        </style>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header__container">
+                <a href="" class="header__logo">
+                    <img
+                        src="/img/CarLogo.png"
+                        alt="logo"
+                        class="header__logo-icon"
+                    />
+                </a>
+                <div class="header__content">
+                    <a href="" class="header__adress"
+                        >ул. Мармора, 4578, Глазго D04 89GR</a
+                    >
+                    <a href="" class="header__phone">800 2345-6789</a>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation Section -->
+        <div class="sticky-container" style="z-index: 4">
+            <nav class="nav">
+                <div class="nav__container">
+                    <ul class="nav__list">
+                        <li class="nav__item active">
+                            <a href="" class="nav__link">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="./html/about/about-rus.html"
+                                class="nav__link"
+                                >О НАС</a
+                            >
+                        </li>
+
+                        <li class="nav__item dropdown">
+                            <a
+                                href="/html/contact/contact.html"
+                                class="nav__link"
+                            >
+                                УСЛУГИ
+                                <span class="spin">></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/html/services/diagnostic-rus.html"
+                                        >Диагностика</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="./html/services/transmission-rus.html"
+                                        >Ремонт АКПП/МКПП</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="./html/services/oilRepair-rus.html"
+                                        >Замена масла</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/brake-rus.html"
+                                        >Тормозная система
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/html/services/steetingWheel-rus.html"
+                                        >Рулевое управление
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/html/services/exaust-rus.html"
+                                        >Выхлопная система
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="./html/services/suspensionGeometry-rus.html"
+                                        >Развал-схождение</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="./html/services/tire-rus.html"
+                                        >Шиномонтаж</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="/html/services/electronicDiagnostic-rus.html"
+                                        >Электронная диагностика
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="./html/news/news.html" class="nav__link"
+                                >NEWS</a
+                            >
+                        </li> -->
+                        <li class="nav__item">
+                            <a
+                                href="/html/contact/contact-rus.html"
+                                class="nav__link"
+                                >КОНТАКТЫ</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="reservation">
+                        <a href="" class="reservation__button"
+                            >Записаться на сервис</a
+                        >
+                    </div>
+                    <ul class="nav-lang">
+                        <a href="./index.html" class="nav-lang__item">АНГЛ</a>
+                        <a href="./index-rus.html" class="nav-lang__item"
+                            >РУС</a
+                        >
+                        <a href="" class="nav-lang__item">ЧЕХ</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Section -->
+        <main class="main">
+            <section class="home">
+                <div class="main__info">
+                    <h2 class="main__info_title">
+                        Качественное обслуживание автомобилей
+                    </h2>
+                    <p class="main__info_text">
+                        Наша компания предоставляет полный спектр услуг по
+                        ремонту и обслуживанию автомобилей. Основная
+                        специализация нашей компании это — качественная
+                        диагностика, обслуживание и ремонт автоматических
+                        коробок передач VAG Groop: Volkswagen, Audi, SEAT,
+                        Skoda. Производители коробок передач: ZF, BorgWarner,
+                        LUK. Внимание к деталям, индивидуальный подход, опыт и
+                        профессионализм, современное оборудование — всё это
+                        позволяет нам оказывать услуги по ремонту автомобилей на
+                        высоком уровне.
+                    </p>
+                </div>
+                <div class="dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </section>
+            <!-- Services Section -->
+            <main class="main">
+                <!-- Services Section -->
+                <section class="services">
+                    <div class="servicesContainer">
+                        <li class="servicesList">
+                            <ul class="servicesListItem">
+                                <div class="servicesIcon">
+                                    <img
+                                        src="./img/diagnosticsIcon.svg"
+                                        alt=""
+                                        class="servicesIMG"
+                                    />
+                                </div>
+                                <div class="servicesTitle">ДИАГНОСТИКА</div>
+                                <div class="servicesText">
+                                    Компьютерная диагностика автомобиля
+                                    позволяет с помощью специального
+                                    оборудования выявлять ошибки и проблемы в
+                                    работе систем автомобиля, влияющие на работу
+                                    двигателя.
+                                </div>
+                                <a
+                                    href="/html/services/diagnostic.html"
+                                    class="servicesButton"
+                                >
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </ul>
+                            <ul class="servicesListItem">
+                                <div class="servicesIcon">
+                                    <img
+                                        src="./img/transmissionIcon.svg"
+                                        alt=""
+                                        class="servicesIMG"
+                                    />
+                                </div>
+                                <div class="servicesTitle">
+                                    РЕМОНТ И ОБСЛУЖИВАНИЕ КПП
+                                </div>
+                                <div class="servicesText">
+                                    У нас есть всё необходимое для быстрого и
+                                    качественного ремонта: современное
+                                    оборудование и специализированные
+                                    инструменты...
+                                </div>
+                                <a
+                                    href="/html/services/transmission.html"
+                                    class="servicesButton"
+                                >
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </ul>
+                            <ul class="servicesListItem">
+                                <div class="servicesIcon">
+                                    <img
+                                        src="./img/oilImg.svg"
+                                        alt=""
+                                        class="servicesIMG"
+                                    />
+                                </div>
+                                <div class="servicesTitle">ЗАМЕНА МАСЛА</div>
+                                <div class="servicesText">
+                                    Замена масла — это регулярная процедура
+                                    технического обслуживания, при которой
+                                    старое моторное масло сливается и заменяется
+                                    новым, чтобы двигатель работал плавно. Также
+                                    производится замена масляного фильтра, чтобы
+                                    удалить грязь и загрязнения из двигателя.
+                                </div>
+                                <a
+                                    href="/html/services/oilRepair.html"
+                                    class="servicesButton"
+                                >
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </ul>
+
+                            <ul class="servicesListItem">
+                                <div class="servicesIcon">
+                                    <img
+                                        src="./img/brakeIcon.svg"
+                                        alt=""
+                                        class="servicesIMG"
+                                    />
+                                </div>
+                                <div class="servicesTitle">
+                                    ТОРМОЗНАЯ СИСТЕМА
+                                </div>
+                                <div class="servicesText">
+                                    Замена тормозных колодок и дисков
+                                    гарантирует надежное торможение и
+                                    безопасность на дороге.
+                                </div>
+                                <a
+                                    href="/html/services/brake.html"
+                                    class="servicesButton"
+                                >
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </ul>
+                            <ul class="servicesListItem">
+                                <div class="servicesIcon">
+                                    <img
+                                        src="./img/steeringWheelIcon.svg"
+                                        alt=""
+                                        class="servicesIMG"
+                                    />
+                                </div>
+                                <div class="servicesTitle">
+                                    РЕМОНТ РУЛЕВОГО УПРАВЛЕНИЯ
+                                </div>
+                                <div class="servicesText">
+                                    Профессиональный ремонт рулевого управления
+                                    восстанавливает точность управления и
+                                    устраняет опасные люфты и вибрации.
+                                </div>
+                                <a
+                                    href="/html/services/steetingWheel.html"
+                                    class="servicesButton"
+                                >
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </ul>
+                            <ul class="servicesListItem">
+                                <div class="servicesIcon">
+                                    <img
+                                        src="./img/exhaustIcon.svg"
+                                        alt=""
+                                        class="servicesIMG"
+                                    />
+                                </div>
+                                <div class="servicesTitle">
+                                    РЕМОНТ ВЫХЛОПНОЙ СИСТЕМЫ
+                                </div>
+                                <div class="servicesText">
+                                    Ремонт выхлопной системы устраняет течи и
+                                    восстанавливает правильную работу двигателя.
+                                    Мы заменяем поврежденные детали для снижения
+                                    шума и поддержания экологичности.
+                                </div>
+                                <a
+                                    href="/html/services/exaust.html"
+                                    class="servicesButton"
+                                >
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </ul>
+                            <ul class="servicesListItem">
+                                <div class="servicesIcon">
+                                    <img
+                                        src="./img/gearIcon.svg"
+                                        alt=""
+                                        class="servicesIMG"
+                                    />
+                                </div>
+                                <div class="servicesTitle">
+                                    РАЗВАЛ-СХОЖДЕНИЕ
+                                </div>
+                                <div class="servicesText">
+                                    Регулировка углов установки колес включает
+                                    проверку и настройку параметров подвески
+                                    автомобиля.
+                                </div>
+                                <a
+                                    href="/html/services/suspensionGeometry.html"
+                                    class="servicesButton"
+                                >
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </ul>
+                            <ul class="servicesListItem">
+                                <div class="servicesIcon">
+                                    <img
+                                        src="./img/tireIcon.svg"
+                                        alt=""
+                                        class="servicesIMG"
+                                    />
+                                </div>
+                                <div class="servicesTitle">ШИНОМОНТАЖ</div>
+                                <div class="servicesText">
+                                    Профессиональный шиномонтаж и балансировка
+                                    колес всех типов и размеров: стандартных,
+                                    низкопрофильных, внедорожных.
+                                </div>
+                                <a
+                                    href="/html/services/tire.html"
+                                    class="servicesButton"
+                                >
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </ul>
+
+                            <ul class="servicesListItem">
+                                <div class="servicesIcon">
+                                    <img
+                                        src="/img/laptopIcon.svg"
+                                        alt=""
+                                        class="servicesIMG"
+                                    />
+                                </div>
+                                <div class="servicesTitle">
+                                    ЭЛЕКТРОННАЯ ДИАГНОСТИКА
+                                </div>
+                                <div class="servicesText">
+                                    Комплексная электронная диагностика
+                                    автомобиля с использованием современного
+                                    оборудования.
+                                </div>
+                                <a
+                                    href="/html/services/electronicDiagnostic.html"
+                                    class="servicesButton"
+                                >
+                                    ПОДРОБНЕЕ
+                                </a>
+                            </ul>
+                        </li>
+                    </div>
+                </section>
+            </main>
+            <!-- Background Section -->
+            <section class="background">
+                <div class="backgroundContainer">
+                    <div class="background__container">
+                        <div class="background__services">
+                            <h2 class="background__services-title">
+                                Ремонт АКПП
+                            </h2>
+                            <img
+                                src="/img/background-left.jpg"
+                                alt=""
+                                class="background__services-img"
+                            />
+                            <p class="background__services-text">
+                                У нас есть все необходимое для быстрого и
+                                качественного ремонта: современное оборудование
+                                и специализированный инструмент, стабильные
+                                поставки запасных частей, а главное —
+                                высококвалифицированные и ответственные
+                                работники. Эти факторы в сочетании с более чем
+                                20-летним профессиональным опытом гарантируют
+                                решение любой проблемы с автоматической
+                                трансмиссией.
+                            </p>
+                        </div>
+                        <div class="background__services">
+                            <h2 class="background__services-title">
+                                Все виды поломок
+                            </h2>
+                            <img
+                                src="/img/background-right.jpg"
+                                alt=""
+                                class="background__services-img service-img-2"
+                            />
+                            <p class="background__services-text">
+                                Мы можем исправить любую проблему с коробкой,
+                                даже если вы сломали ее пополам! Неважно, какова
+                                причина неисправности: выход из строя или износ
+                                механической, гидравлической или электронной
+                                части. Нередко неисправность в одной части
+                                коробки приводит к поломке в другой, поэтому чем
+                                раньше вы обратитесь в сервисный центр, тем
+                                меньше будет стоимость ремонта.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="background__description">
+                        <div class="backgroundText">
+                            <div class="backgroundTitle">Полный автосервис</div>
+                            <div class="backgroundParagraph">
+                                <div class="backgroundParagraphText">
+                                    Владелец автомобиля узнает о неисправности
+                                    автоматической коробки передач (АКПП) по
+                                    характерным симптомам. Чаще всего неполадка
+                                    отображается в виде кода бортовым
+                                    компьютером, который сканирует технические
+                                    параметры трансмиссии. Помимо сообщений об
+                                    ошибках на приборной панели, типичными
+                                    симптомами являются:
+                                </div>
+                                <div class="backgroundParagraphText">
+                                    Рывки или толчки от автоматической коробки
+                                    при запуске автомобиля или переключении
+                                    передач;
+                                </div>
+                                <div class="backgroundParagraphText">
+                                    Рывки или толчки от автоматической коробки
+                                    при запуске автомобиля или переключении
+                                    передач;
+                                </div>
+                                <div class="backgroundParagraphText">
+                                    Заедание, пробуксовка или полное отключение
+                                    одной или нескольких передач; Необычный
+                                    запах гари или плавленой резины/пластика,
+                                    исходящий от коробки передач;
+                                </div>
+                                <div class="backgroundParagraphText">
+                                    Утечка масла (масляные пятна на асфальте под
+                                    автомобилем);
+                                </div>
+                                <div class="backgroundParagraphText">
+                                    Полный отказ автомобиля. Даже незначительные
+                                    симптомы или любое необычное поведение
+                                    машины указывают на необходимость срочной
+                                    консультации со специалистами по ремонту
+                                    АКПП. Помните, своевременное обслуживание,
+                                    ремонт или замена деталей могут сэкономить
+                                    затраты на труд и сохранить трансмиссию без
+                                    серьезного вмешательства.
+                                </div>
+                            </div>
+                            <a href="" class="backgroundButton">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section class="contact">
+                <div class="contactContainer">
+                    <div class="contactBackground">
+                        <div class="contactMap"></div>
+                        <iframe
+                            class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48593.29572497292!2d-74.46207055355366!3d40.429205657315485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c59a53131045%3A0x7eb0a64df036f72f!2sEast%20Brunswick%2C%20NJ!5e0!3m2!1sen!2sus!4v1707617685262!5m2!1sen!2sus"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="contactForm">
+                        <div class="contactInfo">
+                            <div class="contactNumber contactPhoneNumber">
+                                800 2345-6789
+                            </div>
+                            <div class="contactAdress">
+                                ул. Мармора, 4578, Глазго D04 89GR
+                            </div>
+                        </div>
+                        <form
+                            action="./send_mail.php"
+                            method="POST"
+                            class="contact"
+                        >
+                            <div class="form__name">
+                                <h2 class="form-name__h2">Имя</h2>
+                                <input
+                                    placeholder="Ваше имя"
+                                    type="text"
+                                    name="name"
+                                    class="input__name"
+                                    required
+                                />
+                            </div>
+                            <div class="form__gmail">
+                                <h2 class="form-name__h2">Ваш email</h2>
+                                <input
+                                    placeholder="Ваш email"
+                                    type="text"
+                                    name="gmail"
+                                    class="input__gmail"
+                                    required
+                                />
+                            </div>
+                            <div class="form__message">
+                                <h2 class="form-name__h2">Сообщение</h2>
+                                <textarea
+                                    name="message"
+                                    class="input__message"
+                                    cols="60"
+                                    rows="7"
+                                    placeholder="Введите ваше сообщение"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="contactButton">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer-left">
+                    <h1 class="h2-above">Часы работы</h1>
+                    <ul class="footer-left__list">
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Понедельник</h3>
+                            <p class="footer-left__hours">9:00 - 20:00</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Вторник</h3>
+                            <p class="footer-left__hours">9:00 - 20:00</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Среда</h3>
+                            <p class="footer-left__hours">9:00 - 20:00</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Четверг</h3>
+                            <p class="footer-left__hours">9:00 - 20:00</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Пятница</h3>
+                            <p class="footer-left__hours">9:00 - 20:00</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right__logo">
+                        <img
+                            src="/img/header/output_image_Nero AI_Photo_x4.png"
+                            alt=""
+                            class="footer-right__img"
+                        />
+                    </div>
+                    <div class="footer-right__get-in-touch">
+                        <h4 class="h4-getintocuh">Свяжитесь с нами:</h4>
+                        <h4 class="footer-right__phone-number">
+                            (888) 988-1001
+                        </h4>
+                        <h4 class="footer-right__email">
+                            some_gmail@yahoo.com
+                        </h4>
+                    </div>
+                    <div class="footer-right__follow-us">
+                        <h2 class="follow-us">Мы в соцсетях</h2>
+                        <a href="" class="facebook">
+                            <img
+                                src="/img/facebook-icon.svg"
+                                alt=""
+                                class="facebook-link"
+                            />
+                        </a>
+                        <a href="" class="instagram">
+                            <img
+                                src="/img/instagram-icon.svg"
+                                alt=""
+                                class="instagram-link"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- External JavaScript -->
+        <script src="../index.js"></script>
+    </body>
+</html>

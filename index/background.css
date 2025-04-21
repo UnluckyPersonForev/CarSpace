@@ -1,0 +1,187 @@
+.background {
+    background: url(../img/carliftBackground.jpg) no-repeat center center;
+    background-size: cover;
+}
+.backgroundContainer {
+    margin-top: -1px;
+    display: flex;
+    z-index: 3;
+}
+
+.background__container {
+    max-width: 60%;
+    width: 100%;
+    display: flex;
+    /* padding: 15% 25px; */
+    padding-top: 5%;
+}
+.background__services {
+}
+
+.background__services-title {
+    font-size: 2.9rem;
+    color: white;
+    line-height: 120%;
+    font-family: "Roboto";
+    font-weight: 600;
+    margin-bottom: 50px;
+    max-width: 50%;
+}
+.background__services-img {
+    max-width: 85%;
+    width: 100%;
+    padding-bottom: 5%;
+}
+.service-img-2 {
+    max-width: 89%;
+}
+.background__services-text {
+    max-width: 85%;
+    font-size: 1.2rem;
+    font-family: "Noto Sans";
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    margin-bottom: 20%;
+}
+
+.background__description {
+    width: 100%;
+    max-width: 40%;
+}
+.backgroundText {
+    font-family: "Noto Sans";
+    top: 0;
+    bottom: 0;
+    background-color: rgba(43, 42, 42, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    justify-self: end;
+    padding-right: 30px;
+}
+.backgroundTitle {
+    padding-top: 15%;
+    padding-left: 50px;
+    font-size: 2.9rem;
+    color: white;
+    line-height: 120%;
+    font-family: "Roboto";
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.backgroundParagraph {
+    padding-left: 50px;
+    font-size: 1.2rem;
+    font-family: "Noto Sans";
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    margin-bottom: 20%;
+}
+.backgroundParagraphText {
+    margin-bottom: 5%;
+}
+.backgroundButton {
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    width: 100%;
+    max-width: 160px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    margin-left: 0;
+    font-family: "Rubik";
+    font-weight: 500;
+    font-style: normal;
+    bottom: 0;
+}
+
+.backgroundButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border: 1px solid #73b711;
+    border-right: none;
+    border-bottom: none;
+}
+
+.backgroundButton::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border: 1px solid #73b711;
+    border-left: none;
+    border-top: none;
+}
+
+.backgroundButton {
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    width: 100%;
+    max-width: 160px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    margin-left: 0;
+    background: #73b711;
+    color: lightgray;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+    transition: 0.3s ease, color 0.3s ease;
+}
+
+.backgroundButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+    border: 1px solid #73b711;
+    background: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.backgroundButton:hover {
+    background: transparent;
+    color: white;
+}
+
+.backgroundButton:hover::before {
+    opacity: 1;
+}

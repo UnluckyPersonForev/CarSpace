@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="news__content" id="news-content"></div>
+        <script src="./articlesCard.js"></script>
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const newsId = params.get("id");
+
+            const newsItem =newsData.find(item => item.id === newsId)
+
+            const container = document.getElementById("news-content")
+
+            if (newsItem) {
+                container.innerHTML = `
+                <h1></h1>
+                `
+                if (newsItem.text4 &&) {
+                    container.innerHTML += `p`
+                }
+            }
+        </script>
+    </body>
+</html>

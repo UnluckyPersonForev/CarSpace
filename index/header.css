@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 17px 0 18px;
+    z-index: 2;
+}
+.header__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo {
+}
+.header__logo-icon {
+    max-width: 15%;
+    width: 100%;
+}
+.header__content {
+    width: 100%;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.header__adress {
+    z-index: 2;
+    font-size: 1rem;
+    color: white;
+    max-width: 10rem;
+    line-height: 120%;
+    font-family: "Rubik";
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.header__phone {
+    z-index: 2;
+    font-size: 1.5rem;
+    color: rgb(46, 44, 45);
+    color: white;
+    line-height: 120%;
+    font-family: "Rubik";
+    font-weight: 650;
+    line-height: 1.71429;
+}
+.nav {
+    z-index: 0;
+    pointer-events: all;
+    position: sticky;
+    margin-top: 9%;
+    top: 0;
+    background-color: rgba(34, 32, 33, 1);
+    z-index: 10;
+}
+.nav__container {
+    justify-content: space-between;
+    display: flex;
+    z-index: 10;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.nav__list {
+    display: flex;
+}
+.nav__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item.active {
+    background-color: #73b711;
+}
+
+.reservation {
+    font-family: Roboto;
+    pointer-events: all;
+    display: grid;
+    place-items: center; /* Centers both axes */
+}
+.reservation__button {
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    width: 100%;
+    max-width: 160px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    margin-left: 0;
+    background: #73b711;
+    color: lightgray;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+    transition: 0.3s ease, color 0.3s ease;
+}
+.reservation__button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(
+        20px 0,
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+    border: 1px solid #73b711;
+    background: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.reservation__button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border: 1px solid #73b711;
+    border-left: none;
+    border-top: none;
+}
+
+.reservation__button:hover {
+    background: transparent;
+    color: white;
+}
+
+.reservation__button:hover::before {
+    opacity: 1;
+}
+.nav-lang {
+    align-items: center;
+    display: flex;
+    column-gap: 5%;
+}
+.nav-lang__item {
+    font-size: 1rem;
+    color: white;
+    max-width: 10rem;
+    line-height: 120%;
+    font-family: "Rubik";
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.nav-lang__item.active {
+    color: #73b711;
+}
+
+.nav__link {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Rubik";
+    text-decoration: none;
+    padding: 1.875rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #494949;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: "Rubik";
+    z-index: 10;
+}
+
+/* Show the dropdown when hovering over the parent */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background: #73b711;
+}
+
+/* Spin arrow style */
+.spin {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Rubik";
+    margin-left: 5px;
+    transition: transform 0.25s;
+}
+
+/* Rotate arrow on hover */
+.dropdown:hover .spin {
+    transform: rotate(-90deg);
+}
+
+/* Updated spin arrow style */
+.spin {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Rubik";
+    color: white; /* Make the arrow white */
+    display: block; /* Forces the arrow to appear on its own line */
+    text-align: center; /* Center the arrow */
+    margin-top: 5px; /* Add space between the button and arrow */
+    margin-left: 0; /* Remove any left margin */
+}
+
+/* Optionally remove or comment out the rotation if not needed */
+/* .dropdown:hover .spin {
+    transform: rotate(-90deg);
+  } */
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #494949;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: "Rubik ";
+    z-index: 10;
+}
+
+/* Show dropdown on hover or when .show class is added */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background: #73b711;
+}
+
+/* Force the arrow (spin) inside the SERVICE button to display as a block element */
+.nav__link .spin {
+    display: block;
+    margin-top: 3px; /* 3px gap between the SERVICE text and the arrow */
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.nav__link {
+    position: relative; /* enable positioning context */
+}
+
+/* Position the arrow inside the button at the bottom */
+
+.nav__link {
+    position: relative; /* Needed for absolute positioning of the arrow */
+}
+
+/* Default state: arrow rotated 90° */
+.nav__link .spin {
+    position: absolute;
+    left: 50%;
+    bottom: 3px;
+    transform: translateX(-50%) rotate(90deg);
+    transition: transform 0.3s ease;
+    color: white;
+    font-size: 14px; /* Adjust as needed */
+    font-weight: 400;
+    font-family: "Lato";
+    margin: 0;
+    line-height: 1;
+}
+
+/* On hover: arrow rotates to 270° (i.e. upside down relative to default) */
+.nav__link:hover .spin {
+    transform: translateX(-50%) rotate(270deg);
+}
+
+.sticky-container {
+    pointer-events: none;
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}

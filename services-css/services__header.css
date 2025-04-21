@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url(../index/no-margind.css);
+@import url(../index/header.css);
+@import url(/index/font.css);
+
+/* .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+} */
+
+.mainServices {
+    background: url(/img/background-main-services.jpg) no-repeat center / cover;
+    padding-bottom: 30vh;
+}
+.header-bottom {
+    padding-top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    padding-bottom: 25px;
+}
+
+.header_title {
+    color: white;
+    font-weight: 700;
+    font-family: "rubik";
+    text-decoration: none;
+    max-width: 30%;
+    font-size: 3rem;
+}
+.header__picture {
+}
+.header_img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.text {
+    color: white;
+    padding-top: 20px;
+    max-width: 65%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.text__paragraphs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 0 auto;
+}
+.text_paragraphsFirst {
+}
+.paragraph__text {
+    font-weight: 500;
+
+    font-family: "Noto Sans";
+    font-size: 1.2 rem;
+    text-decoration: none;
+}
+.text_paragraphsSecond {
+}
+
+/* UL*/
+
+.prices {
+    max-width: 75%;
+    margin: 0 auto;
+}
+.prices__ul {
+    margin: 0 auto;
+    max-width: 75%;
+    /* background: url(/img/prices-background.png) no-repeat center; */
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    border-top: 2px solid #73b711;
+}
+.prices__list-item {
+    justify-content: space-between;
+    display: flex;
+    column-gap: 4%;
+}
+.list-item__font-style {
+    font-weight: 700;
+    font-family: "Noto Sans";
+    text-decoration: none;
+    font-size: 1rem;
+}
+.list-item_text {
+    color: white;
+    font-weight: 500;
+    max-width: 55%;
+    width: 100%;
+}
+.list-item_time {
+    color: #73b711;
+    font-size: 1.2rem;
+}
+.list-item_price {
+    color: #73b711;
+    font-size: 1.2rem;
+}

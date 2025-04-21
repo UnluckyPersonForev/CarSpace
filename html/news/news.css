@@ -1,0 +1,67 @@
+@import url(/index/no-margind.css);
+
+.news__main {
+}
+.news__container {
+}
+.news__title {
+    font-size: 3rem;
+}
+.news__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    column-gap: 5%;
+    row-gap: 5%;
+}
+.news__lits-item {
+    padding-bottom: 5%;
+    max-width: 25%;
+    background-color: rgba(34, 32, 33, 1);
+    padding: 15px 20px;
+}
+.news__list-img {
+    max-width: max-content;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.news__list-text {
+    margin-bottom: 3%;
+}
+.news__list-info {
+    display: flex;
+}
+.news__list-date {
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    max-width: 45%;
+    justify-content: center;
+    column-gap: 2%;
+    width: 100%;
+}
+.news__list-icon {
+    width: 100%;
+    max-width: 20px;
+}
+.news__list-date-text {
+}
+.news__list-commets {
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    max-width: 15%;
+    justify-content: center;
+    column-gap: 15%;
+    width: 100%;
+}
+.news__list-comments-img {
+    width: 100%;
+    max-width: 20px;
+}
+.news__list-comments-text {
+}

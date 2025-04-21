@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" stroke="#73b711" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Wrench Head -->
+  <path d="M332 132c28-28 72-28 100 0s72 0 72 0l-60 60c-28 28-72 28-100 0"/>
+  
+  <!-- Socket Body -->
+  <path d="M196 132l-136 136c-16 16-16 44 0 60l12 12-20 20c-4 4-4 10 0 14l40 40c4 4 10 4 14 0l20-20 12 12c16 16 44 16 60 0l136-136c16-16 16-44 0-60l-12-12 20-20c4-4 4-10 0-14l-40-40c-4-4-10-4-14 0l-20 20-12-12c-16-16-44-16-60 0z"/>
+  
+  <!-- Crossbar Detail -->
+  <path d="M168 244l56-56"/>
+</svg>

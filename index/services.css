@@ -1,0 +1,169 @@
+.services {
+    background: url(../img/servicesBackgroundDark.jpg) no-repeat center center;
+    background-size: cover;
+}
+.servicesContainer {
+}
+
+.servicesList {
+    padding: 25vh 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.servicesListItem {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+}
+
+/* First row: items 1-4 go into columns 1–4 */
+.servicesListItem:nth-child(1) {
+    grid-column: 1;
+}
+.servicesListItem:nth-child(2) {
+    grid-column: 2;
+}
+.servicesListItem:nth-child(3) {
+    grid-column: 3;
+}
+.servicesListItem:nth-child(4) {
+    grid-column: 4;
+}
+
+/* Second row: center the 3 items using fractional grid lines */
+.servicesListItem:nth-child(5) {
+    grid-column: 1.5 / span 1;
+}
+.servicesListItem:nth-child(6) {
+    grid-column: 2.5 / span 1;
+}
+.servicesListItem:nth-child(7) {
+    grid-column: 3.5 / span 1;
+}
+
+.servicesIcon {
+}
+.servicesIMG {
+    padding-bottom: 10px;
+    max-width: 2.5rem;
+    width: 100%;
+}
+.servicesTitle {
+    font-size: 1.3rem;
+    font-family: "Roboto";
+    color: white;
+    padding-bottom: 10px;
+}
+.servicesText {
+    font-size: 0.9rem;
+
+    font-family: "Noto Sans";
+    color: rgb(204, 203, 203);
+    padding-bottom: 10px;
+}
+.servicesButton {
+    font-family: "Rubik";
+    font-size: 0.2rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    width: 100%;
+    max-width: 80px;
+    padding: 5px 10px;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    margin-left: 0;
+    background: transparent;
+    color: #73b711;
+    clip-path: polygon(
+        10px 0,
+        100% 0,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        0 100%,
+        0 10px
+    );
+    transition: 0.3s ease, color 0.3s ease;
+    color: white;
+}
+
+.servicesButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(
+        10px 0,
+        100% 0,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        0 100%,
+        0 10px
+    );
+    border: 1px solid #73b711;
+    background: none;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.servicesButton:hover {
+    background: #73b711;
+    color: lightgray;
+}
+
+.servicesButton:hover::before {
+    opacity: 0;
+}
+
+/* Remove only vertical space between main and services */
+main.main {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Remove top vertical space for services but keep horizontal centering */
+.services {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Ensure the inner container/list remains centered */
+.servicesContainer {
+    width: 100%;
+}
+
+.servicesList {
+    padding: 25vh 20px; /* or your original values */
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto; /* This centers the services list horizontally */
+}
+
+main.main {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    border-bottom: 1px solid transparent; /* Prevents margin collapse */
+}
+
+.services {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}

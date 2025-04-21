@@ -1,0 +1,131 @@
+.footer {
+    margin-top: -1px;
+    padding-top: 48px;
+    background: #494949;
+}
+
+.footer__container {
+    justify-content: space-between;
+    display: flex;
+    max-width: 1215px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    max-width: 12%;
+    width: 100%;
+}
+
+.h2-above {
+    color: white;
+    line-height: 120%;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-left__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.footer-left__list-item {
+    width: 100%;
+    justify-content: space-between;
+
+    display: flex;
+    color: white;
+    line-height: 120%;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.footer-left__day {
+}
+.footer-left__hours {
+}
+
+.footer-right {
+}
+
+.footer-right__logo {
+    margin-bottom: 12px;
+}
+
+.footer-right__img {
+    max-width: 115px;
+}
+
+.footer-right__get-in-touch {
+}
+
+.h4-getintocuh {
+    color: white;
+    line-height: 120%;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-right__phone-number {
+    color: white;
+    line-height: 120%;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 1.01rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-right__email {
+    color: white;
+    line-height: 120%;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 1.01rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-right__follow-us {
+}
+
+.follow-us {
+    color: white;
+    line-height: 120%;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.facebook {
+}
+
+.instagram {
+}
+
+.facebook-link {
+    margin-right: 10px;
+    max-width: 40px;
+}
+
+.instagram-link {
+    max-width: 40px;
+}
+
+@media (max-width: 768px) {
+}

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Main CSS file (imports other styles like header.css, main.css, etc.) -->
+        <link rel="stylesheet" href="./index/index.css" />
+        <!-- Dropdown-specific CSS (separate file) -->
+        <link rel="stylesheet" href="./css/dropdown.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+        </style>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header__container">
+                <a href="" class="header__logo">
+                    <img
+                        src="img/CarLogo.png"
+                        alt="logo"
+                        class="header__logo-icon"
+                    />
+                </a>
+                <div class="header__content">
+                    <a href="" class="header__adress"
+                        >4578 Marmora Road, Glasgow D04 89GR</a
+                    >
+                    <a href="" class="header__phone">800 2345-6789</a>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation Section -->
+        <div class="sticky-container" style="z-index: 4">
+            <nav class="nav">
+                <div class="nav__container">
+                    <ul class="nav__list">
+                        <li class="nav__item active">
+                            <a href="" class="nav__link">HOME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./html/about/about.html" class="nav__link"
+                                >ABOUT</a
+                            >
+                        </li>
+
+                        <li class="nav__item dropdown">
+                            <a
+                                href="/html/contact/contact.html"
+                                class="nav__link"
+                            >
+                                SERVICES
+                                <span class="spin">></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/html/services/diagnostic.html"
+                                        >Diagnostic Services</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="./html/services/transmission.html"
+                                        >Transmission Repair & Maintenance</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="./html/services/oilRepair.html"
+                                        >Oil Change</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="./html/services/brake.html"
+                                        >Brake system
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/html/services/steetingWheel.html"
+                                        >Steering System Repair
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/html/services/exaust.html"
+                                        >Exhaust System Repair
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="./html/services/suspensionGeometry.html"
+                                        >Suspension geometry</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="./html/services/tire.html"
+                                        >Tire fittings</a
+                                    >
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="/html/services/electronicDiagnostic.html"
+                                        >Electronic diagnostics of a car
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="./html/news/news.html" class="nav__link"
+                                >NEWS</a
+                            >
+                        </li> -->
+                        <li class="nav__item">
+                            <a
+                                href="/html/contact/contact.html "
+                                class="nav__link"
+                                >CONTACTS</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="reservation">
+                        <a href="" class="reservation__button"
+                            >Schedule an appointment</a
+                        >
+                    </div>
+                    <ul class="nav-lang">
+                        <a href="./index.html" class="nav-lang__item">ENG</a>
+                        <a href="./index-rus.html" class="nav-lang__item"
+                            >RUS</a
+                        >
+                        <a href="" class="nav-lang__item">CZ</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Section -->
+        <main class="main">
+            <section class="home">
+                <div class="main__info">
+                    <h2 class="main__info_title">Quality car maintenance</h2>
+                    <p class="main__info_text">
+                        Our company offers a full range of car repair and
+                        maintenance services. Our main specialization is
+                        high-quality diagnostics, servicing, and repair of
+                        automatic transmissions for the VAG Group: Volkswagen,
+                        Audi, SEAT, and Skoda. We work with transmission
+                        manufacturers such as ZF, BorgWarner, and LUK. Attention
+                        to detail, a personalized approach, experience and
+                        professionalism, and modern equipment — all of this
+                        enables us to provide car repair services at a high
+                        level.
+                    </p>
+                </div>
+                <div class="dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </section>
+            <!-- Services Section -->
+            <section class="services">
+                <div class="servicesContainer">
+                    <li class="servicesList">
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/diagnosticsIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">Diagnostic Services</div>
+                            <div class="servicesText">
+                                Car diagnostics involves using specialized tools
+                                to scan the vehicle's computer systems,
+                                identifying error codes and performance issues
+                                that affect engine operation.
+                            </div>
+                            <a
+                                href="/html/services/diagnostic.html"
+                                class="servicesButton"
+                            >
+                                read more
+                            </a>
+                        </ul>
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/transmissionIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">
+                                Transmission Repair & Maintenance
+                            </div>
+                            <div class="servicesText">
+                                We have everything you need for quick and
+                                high-quality repairs: modern equipment and
+                                special tools...
+                            </div>
+                            <a
+                                href="/html/services/transmission.html"
+                                class="servicesButton"
+                            >
+                                read more
+                            </a>
+                        </ul>
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/oilImg.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">Oil Change</div>
+                            <div class="servicesText">
+                                An oil change is a maintenance task that
+                                involves draining old engine oil and replacing
+                                it with fresh oil to keep the engine running
+                                smoothly.
+                            </div>
+                            <a
+                                href="/html/services/oilRepair.html"
+                                class="servicesButton"
+                            >
+                                read more
+                            </a>
+                        </ul>
+
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/brakeIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">Brake system</div>
+                            <div class="servicesText">
+                                Replacing brake pads and drives Guarantees
+                                reliable braking and safety road
+                            </div>
+                            <a
+                                href="/html/services/brake.html"
+                                class="servicesButton"
+                            >
+                                read more
+                            </a>
+                        </ul>
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/steeringWheelIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">
+                                Steering System Repair
+                            </div>
+                            <div class="servicesText">
+                                Professional steering system repairs restore
+                                precise handling and eliminate dangerous play or
+                                vibrations.
+                            </div>
+                            <a
+                                href="/html/services/steetingWheel.html"
+                                class="servicesButton"
+                            >
+                                read more
+                            </a>
+                        </ul>
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/exhaustIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">
+                                Exhaust System Repair
+                            </div>
+                            <div class="servicesText">
+                                Exhaust repairs fix leaks and restore proper
+                                engine performance. We replace damaged parts to
+                                reduce noise and keep your car running cleanly.
+                            </div>
+                            <a
+                                href="/html/services/exaust.html"
+                                class="servicesButton"
+                            >
+                                read more
+                            </a>
+                        </ul>
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/gearIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">suspension geometry</div>
+                            <div class="servicesText">
+                                Wheel alignment includes the procedure checks
+                                and adjustments footer parameters car
+                            </div>
+                            <a
+                                href="/html/services/suspensionGeometry.html"
+                                class="servicesButton"
+                            >
+                                read more
+                            </a>
+                        </ul>
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/tireIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">Tire fittings</div>
+                            <div class="servicesText">
+                                Professional tire fitting and bapansmrovka kopes
+                                of all types and size: standard, low-profile,
+                                ranfpet tires.
+                            </div>
+                            <a
+                                href="/html/services/tire.html"
+                                class="servicesButton"
+                            >
+                                read more
+                            </a>
+                        </ul>
+
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="/img/laptopIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">
+                                Electronic diagnostics of a car
+                            </div>
+                            <div class="servicesText">
+                                Comprehensive electronic diagnostics of your car
+                                using modern equipment
+                            </div>
+                            <a
+                                href="/html/services/electronicDiagnostic.html"
+                                class="servicesButton"
+                            >
+                                read more
+                            </a>
+                        </ul>
+                    </li>
+                </div>
+            </section>
+            <!-- Background Section -->
+            <section class="background">
+                <div class="backgroundContainer">
+                    <div class="background__container">
+                        <div class="background__services">
+                            <h2 class="background__services-title">
+                                Automatic Transmission Repair
+                            </h2>
+                            <img
+                                src="/img/background-left.jpg"
+                                alt=""
+                                class="background__services-img"
+                            />
+                            <p class="background__services-text">
+                                We have everything needed for fast and
+                                high-quality repairs: modern equipment and
+                                specialized tools, stable supply of spare parts,
+                                and most importantly - highly qualified and
+                                responsible technicians. These factors combined
+                                with over 20 years of professional experience
+                                guarantee solutions to any automatic
+                                transmission problem.
+                            </p>
+                        </div>
+                        <div class="background__services">
+                            <h2 class="background__services-title">
+                                All Types of Breakdowns
+                            </h2>
+                            <img
+                                src="/img/background-right.jpg"
+                                alt=""
+                                class="background__services-img service-img-2"
+                            />
+                            <p class="background__services-text">
+                                We can fix any transmission problem, even if
+                                you've broken it in half! No matter what caused
+                                the malfunction: failure or wear of mechanical,
+                                hydraulic or electronic components. Often a
+                                problem in one part of the transmission leads to
+                                failure in another, so the sooner you visit a
+                                service center, the less the repair will cost.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="background__description">
+                        <div class="backgroundText">
+                            <div class="backgroundTitle">
+                                Complete Auto Service
+                            </div>
+                            <div class="backgroundParagraph">
+                                <div
+                                    class="backgroundParagraphText"
+                                    style="margin-bottom: 0%"
+                                >
+                                    Car owners typically recognize automatic
+                                    transmission (AT) failures through specific
+                                    symptoms. Most often, the malfunction is
+                                    displayed as an error code by the onboard
+                                    computer that monitors the transmission's
+                                    technical parameters. In addition to
+                                    dashboard warning lights, common symptoms
+                                    include:
+                                </div>
+                                <div class="backgroundParagraphText">
+                                    Jerks or jolts from the automatic
+                                    transmission during vehicle start or gear
+                                    changes;
+                                </div>
+                                <div class="backgroundParagraphText">
+                                    Gear slipping, sticking, or complete
+                                    disengagement of one or more gears; An
+                                    unusual burning smell or odor of melted
+                                    rubber/plastic from the transmission;
+                                </div>
+                                <div class="backgroundParagraphText">
+                                    Fluid leaks (oil spots on the ground under
+                                    the vehicle);
+                                </div>
+                                <div class="backgroundParagraphText">
+                                    Complete vehicle failure. Even minor
+                                    symptoms or any unusual vehicle behavior
+                                    indicate the need for immediate professional
+                                    automatic transmission repair. Remember,
+                                    timely maintenance, repairs, or part
+                                    replacements can save on labor costs and
+                                    preserve your transmission without major
+                                    overhauls.
+                                </div>
+                            </div>
+                            <a href="" class="backgroundButton">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section class="contact">
+                <div class="contactContainer">
+                    <div class="contactBackground">
+                        <div class="contactMap"></div>
+                        <iframe
+                            class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48593.29572497292!2d-74.46207055355366!3d40.429205657315485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c59a53131045%3A0x7eb0a64df036f72f!2sEast%20Brunswick%2C%20NJ!5e0!3m2!1sen!2sus!4v1707617685262!5m2!1sen!2sus"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="contactForm">
+                        <div class="contactInfo">
+                            <div class="contactNumber contactPhoneNumber">
+                                800 2345-6789
+                            </div>
+                            <div class="contactAdress">
+                                4578 Marmora Road, Glasgow D04 89GR
+                            </div>
+                        </div>
+                        <form
+                            action="./send_mail.php"
+                            method="POST"
+                            class="contact"
+                        >
+                            <div class="form__name">
+                                <h2 class="form-name__h2">Name</h2>
+                                <input
+                                    placeholder="Your name"
+                                    type="text"
+                                    name="name"
+                                    class="input__name"
+                                    required
+                                />
+                            </div>
+                            <div class="form__gmail">
+                                <h2 class="form-name__h2">
+                                    Your email address
+                                </h2>
+                                <input
+                                    placeholder="Your email address"
+                                    type="text"
+                                    name="gmail"
+                                    class="input__gmail"
+                                    required
+                                />
+                            </div>
+                            <div class="form__message">
+                                <h2 class="form-name__h2">Message</h2>
+                                <textarea
+                                    name="message"
+                                    class="input__message"
+                                    cols="60"
+                                    rows="7"
+                                    placeholder="Enter your message"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="contactButton">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer-left">
+                    <h1 class="h2-above">Open Hours</h1>
+                    <ul class="footer-left__list">
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Monday</h3>
+                            <p class="footer-left__hours">9am to 8pm</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Tuesday</h3>
+                            <p class="footer-left__hours">9am to 8pm</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Wedsday</h3>
+                            <p class="footer-left__hours">9am to 8pm</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Thursday</h3>
+                            <p class="footer-left__hours">9am to 8pm</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Friday</h3>
+                            <p class="footer-left__hours">9am to 8pm</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right__logo">
+                        <img
+                            src="/img/header/output_image_Nero AI_Photo_x4.png"
+                            alt=""
+                            class="footer-right__img"
+                        />
+                    </div>
+                    <div class="footer-right__get-in-touch">
+                        <h4 class="h4-getintocuh">Get in Touch:</h4>
+                        <h4 class="footer-right__phone-number">
+                            (888) 988-1001
+                        </h4>
+                        <h4 class="footer-right__email">
+                            some_gmail@yahoo.com
+                        </h4>
+                    </div>
+                    <div class="footer-right__follow-us">
+                        <h2 class="follow-us">Follow Us</h2>
+                        <a href="" class="facebook">
+                            <img
+                                src="/img/facebook-icon.svg"
+                                alt=""
+                                class="facebook-link"
+                            />
+                        </a>
+                        <a href="" class="instagram">
+                            <img
+                                src="/img/instagram-icon.svg"
+                                alt=""
+                                class="instagram-link"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- External JavaScript -->
+        <script src="./index.js"></script>
+    </body>
+</html>
