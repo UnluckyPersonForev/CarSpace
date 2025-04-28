@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Main CSS file (imports other styles like header.css, main.css, etc.) -->
+        <link rel="stylesheet" href="./index/index.css" />
+        <!-- Dropdown-specific CSS (separate file) -->
+        <link rel="stylesheet" href="/css/dropdown.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+        </style>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__content">
+                    <a href="" class="header__adress"
+                        >4578 Marmora Road, Glasgow D04 89GR</a
+                    >
+                    <a href="" class="header__phone">800 2345-6789</a>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation Section -->
+        <div class="sticky-container" style="z-index: 4">
+            <nav class="nav">
+                <div class="nav__container">
+                    <ul class="nav__list">
+                        <a href="" class="header__logo">
+                            <img
+                                src="/img/CarLogoCut.png"
+                                alt="logo"
+                                class="header__logo-icon"
+                            />
+                        </a>
+                        <li class="nav__item active">
+                            <a href="" class="nav__link">DOMŮ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="/html/about/about-cz.html"
+                                class="nav__link"
+                                >O NÁS</a
+                            >
+                        </li>
+
+                        <li class="nav__item dropdown">
+                            <a
+                                href="/html/contact/contact.html"
+                                class="nav__link"
+                            >
+                                SLUŽBY
+                                <span class="spin">></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/html/services/diagnostic.html"
+                                        >Diagnostika vozidel</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="./html/services/transmission.html"
+                                        >Oprava a údržba převodovky</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="./html/services/oilRepair.html"
+                                        >Výměna oleje</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="./html/services/brake.html"
+                                        >Brzdový systém</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/steetingWheel.html"
+                                        >Oprava řízení</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/exaust.html"
+                                        >Oprava výfukového systému</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="./html/services/suspensionGeometry.html"
+                                        >Geometrie podvozku</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="./html/services/tire.html"
+                                        >Přezouvání pneumatik</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="./html/news/news.html" class="nav__link">NOVINKY</a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a
+                                href="/html/contact/contact.html"
+                                class="nav__link"
+                                >KONTAKTY</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="reservation">
+                        <a href="" class="reservation__button">Objednat se</a>
+                    </div>
+                    <ul class="nav-lang">
+                        <a href="./index.html" class="nav-lang__item">ENG</a>
+                        <a href="./index-rus.html" class="nav-lang__item"
+                            >RUS</a
+                        >
+                        <a href="" class="nav-lang__item">CZ</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Section -->
+        <main class="main">
+            <section class="home">
+                <div class="main__info">
+                    <h2 class="main__info_title">Kvalitní údržba automobilů</h2>
+                    <p class="main__info_text">
+                        Naše společnost nabízí kompletní škálu služeb v oblasti
+                        opravy a údržby vozidel. Naší hlavní specializací je
+                        kvalitní diagnostika, servis a oprava automatických
+                        převodovek pro skupinu VAG: Volkswagen, Audi, SEAT a
+                        Škoda. Spolupracujeme s výrobci převodovek, jako jsou
+                        ZF, BorgWarner a LUK. Důraz na detail, individuální
+                        přístup, zkušenosti a profesionalita spolu s moderním
+                        vybavením nám umožňují poskytovat služby na vysoké
+                        úrovni.
+                    </p>
+                </div>
+                <div class="dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services">
+                <div class="servicesContainer">
+                    <li class="servicesList">
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/diagnosticsIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">Diagnostické služby</div>
+                            <div class="servicesText">
+                                Diagnostika vozidel zahrnuje použití
+                                specializovaných nástrojů k prověření
+                                počítačových systémů vozidla, identifikaci
+                                chybových kódů a problémů s výkonem motoru.
+                            </div>
+                            <a
+                                href="/html/services/diagnostic.html"
+                                class="servicesButton"
+                            >
+                                číst více
+                            </a>
+                        </ul>
+
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/transmissionIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">
+                                Oprava a údržba převodovky
+                            </div>
+                            <div class="servicesText">
+                                Máme vše potřebné pro rychlé a kvalitní opravy:
+                                moderní vybavení a specializované nástroje...
+                            </div>
+                            <a
+                                href="/html/services/transmission.html"
+                                class="servicesButton"
+                            >
+                                číst více
+                            </a>
+                        </ul>
+
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/oilImg.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">Výměna oleje</div>
+                            <div class="servicesText">
+                                Výměna oleje je údržbový úkon, který zahrnuje
+                                vypuštění starého motorového oleje a doplnění
+                                čerstvého oleje pro hladký chod motoru.
+                            </div>
+                            <a
+                                href="/html/services/oilRepair.html"
+                                class="servicesButton"
+                            >
+                                číst více
+                            </a>
+                        </ul>
+
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/brakeIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">Brzdový systém</div>
+                            <div class="servicesText">
+                                Výměna brzdových destiček a kotoučů zajišťuje
+                                spolehlivé brzdění a bezpečnost na silnici.
+                            </div>
+                            <a
+                                href="/html/services/brake.html"
+                                class="servicesButton"
+                            >
+                                číst více
+                            </a>
+                        </ul>
+
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/steeringWheelIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">Oprava řízení</div>
+                            <div class="servicesText">
+                                Profesionální oprava řízení obnovuje přesné
+                                ovládání a odstraňuje nebezpečné vůle nebo
+                                vibrace.
+                            </div>
+                            <a
+                                href="/html/services/steetingWheel.html"
+                                class="servicesButton"
+                            >
+                                číst více
+                            </a>
+                        </ul>
+
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/exhaustIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">
+                                Oprava výfukového systému
+                            </div>
+                            <div class="servicesText">
+                                Opravy výfukového systému odstraňují úniky a
+                                obnovují správnou funkci motoru. Vyměňujeme
+                                poškozené části a snižujeme hlučnost a emise.
+                            </div>
+                            <a
+                                href="/html/services/exaust.html"
+                                class="servicesButton"
+                            >
+                                číst více
+                            </a>
+                        </ul>
+
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/gearIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">Geometrie podvozku</div>
+                            <div class="servicesText">
+                                Seřízení geometrie kol zahrnuje kontrolu a
+                                úpravu nastavení podvozkových parametrů vozidla.
+                            </div>
+                            <a
+                                href="/html/services/suspensionGeometry.html"
+                                class="servicesButton"
+                            >
+                                číst více
+                            </a>
+                        </ul>
+
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="./img/tireIcon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">
+                                Přezouvání pneumatik
+                            </div>
+                            <div class="servicesText">
+                                Profesionální montáž a vyvažování pneumatik
+                                všech typů a velikostí: standardních,
+                                nízkoprofilových a runflat pneumatik.
+                            </div>
+                            <a
+                                href="/html/services/tire.html"
+                                class="servicesButton"
+                            >
+                                číst více
+                            </a>
+                        </ul>
+                    </li>
+                </div>
+            </section>
+
+            <!-- Background Section -->
+            <section class="background">
+                <div class="backgroundContainer">
+                    <div class="background__container">
+                        <div class="background__services">
+                            <h2 class="background__services-title">
+                                Oprava automatických převodovek
+                            </h2>
+                            <img
+                                src="/img/background-left.jpg"
+                                alt=""
+                                class="background__services-img"
+                            />
+                            <p class="background__services-text">
+                                Máme vše potřebné pro rychlou a kvalitní opravu:
+                                moderní vybavení, specializované nástroje,
+                                stabilní zásobu náhradních dílů a především
+                                vysoce kvalifikované a zodpovědné techniky. Tyto
+                                faktory v kombinaci s více než 20 lety
+                                profesionálních zkušeností zaručují řešení
+                                jakéhokoliv problému s automatickou převodovkou.
+                            </p>
+                        </div>
+
+                        <div class="background__services">
+                            <h2 class="background__services-title">
+                                Oprava všech typů poruch
+                            </h2>
+                            <img
+                                src="/img/background-right.jpg"
+                                alt=""
+                                class="background__services-img service-img-2"
+                            />
+                            <p class="background__services-text">
+                                Opravíme jakýkoliv problém s převodovkou – i
+                                kdyby byla zlomená napůl! Nezáleží na tom, zda
+                                byla příčina poruchy mechanická, hydraulická
+                                nebo elektronická. Často problém v jedné části
+                                převodovky vede k poruše jiné, proto čím dříve
+                                navštívíte servis, tím nižší budou náklady na
+                                opravu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="background__description">
+                        <div class="backgroundText">
+                            <div class="backgroundTitle">
+                                Kompletní servis vozidel
+                            </div>
+                            <div class="backgroundParagraph">
+                                <div
+                                    class="backgroundParagraphText"
+                                    style="margin-bottom: 0%"
+                                >
+                                    Majitelé vozidel obvykle rozpoznají poruchu
+                                    automatické převodovky (AT) podle určitých
+                                    příznaků. Nejčastěji se závada zobrazí jako
+                                    chybový kód palubním počítačem, který
+                                    sleduje technické parametry převodovky.
+                                    Kromě varovných kontrolek na palubní desce
+                                    mezi běžné příznaky patří:
+                                </div>
+
+                                <div class="backgroundParagraphText">
+                                    Rázování nebo trhání převodovky při rozjezdu
+                                    vozidla nebo při změnách převodových stupňů;
+                                </div>
+
+                                <div class="backgroundParagraphText">
+                                    Prokluzování, zadrhávání nebo úplné vyřazení
+                                    jednoho či více převodových stupňů;
+                                    Neobvyklý zápach spáleniny nebo tavené
+                                    gumy/plastu vycházející z převodovky;
+                                </div>
+
+                                <div class="backgroundParagraphText">
+                                    Únik kapalin (olejové skvrny pod vozidlem);
+                                </div>
+
+                                <div class="backgroundParagraphText">
+                                    Úplná nepojízdnost vozidla. I drobné
+                                    příznaky nebo jakékoli neobvyklé chování
+                                    vozidla vyžadují okamžitou odbornou opravu
+                                    automatické převodovky. Pamatujte, že včasná
+                                    údržba, oprava nebo výměna dílů vám ušetří
+                                    náklady na práci a zachrání převodovku před
+                                    rozsáhlými opravami.
+                                </div>
+                            </div>
+                            <a href="" class="backgroundButton">číst více</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact">
+                <div class="contactContainer">
+                    <div class="contactBackground">
+                        <div class="contactMap"></div>
+                        <iframe
+                            class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48593.29572497292!2d-74.46207055355366!3d40.429205657315485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c59a53131045%3A0x7eb0a64df036f72f!2sEast%20Brunswick%2C%20NJ!5e0!3m2!1sen!2sus!4v1707617685262!5m2!1sen!2sus"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="contactForm">
+                        <div class="contactInfo">
+                            <div class="contactNumber contactPhoneNumber">
+                                800 2345-6789
+                            </div>
+                            <div class="contactAdress">
+                                4578 Marmora Road, Glasgow D04 89GR
+                            </div>
+                        </div>
+                        <form
+                            action="./send_mail.php"
+                            method="POST"
+                            class="contact"
+                        >
+                            <div class="form__name">
+                                <h2 class="form-name__h2">Jméno</h2>
+                                <input
+                                    placeholder="Vaše jméno"
+                                    type="text"
+                                    name="name"
+                                    class="input__name"
+                                    required
+                                />
+                            </div>
+                            <div class="form__gmail">
+                                <h2 class="form-name__h2">
+                                    Vaše e-mailová adresa
+                                </h2>
+                                <input
+                                    placeholder="Vaše e-mailová adresa"
+                                    type="text"
+                                    name="gmail"
+                                    class="input__gmail"
+                                    required
+                                />
+                            </div>
+                            <div class="form__message">
+                                <h2 class="form-name__h2">Zpráva</h2>
+                                <textarea
+                                    name="message"
+                                    class="input__message"
+                                    cols="60"
+                                    rows="7"
+                                    placeholder="Zadejte svou zprávu"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="contactButton">
+                                Odeslat
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer-left">
+                    <h1 class="h2-above">Otevírací doba</h1>
+                    <ul class="footer-left__list">
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Pondělí</h3>
+                            <p class="footer-left__hours">9:00 - 20:00</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Úterý</h3>
+                            <p class="footer-left__hours">9:00 - 20:00</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Středa</h3>
+                            <p class="footer-left__hours">9:00 - 20:00</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Čtvrtek</h3>
+                            <p class="footer-left__hours">9:00 - 20:00</p>
+                        </li>
+                        <li class="footer-left__list-item">
+                            <h3 class="footer-left__day">Pátek</h3>
+                            <p class="footer-left__hours">9:00 - 20:00</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right__logo">
+                        <img
+                            src="/img/header/output_image_Nero AI_Photo_x4.png"
+                            alt=""
+                            class="footer-right__img"
+                        />
+                    </div>
+                    <div class="footer-right__get-in-touch">
+                        <h4 class="h4-getintocuh">Kontaktujte nás:</h4>
+                        <h4 class="footer-right__phone-number">
+                            (888) 988-1001
+                        </h4>
+                        <h4 class="footer-right__email">
+                            some_gmail@yahoo.com
+                        </h4>
+                    </div>
+                    <div class="footer-right__follow-us">
+                        <h2 class="follow-us">Sledujte nás</h2>
+                        <a href="" class="facebook">
+                            <img
+                                src="/img/facebook-icon.svg"
+                                alt=""
+                                class="facebook-link"
+                            />
+                        </a>
+                        <a href="" class="instagram">
+                            <img
+                                src="/img/instagram-icon.svg"
+                                alt=""
+                                class="instagram-link"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- External JavaScript -->
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -13,6 +13,8 @@
     width: 100%;
     display: flex;
     /* padding: 15% 25px; */
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 5%;
 }
 .background__services {
