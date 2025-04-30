@@ -215,7 +215,13 @@
 .dropdown-menu li a:hover {
     background: #73b711;
 }
+.dropdown-menu li a:active {
+    background: #73b711;
+}
 
+.serviceLi {
+    background: #73b711;
+}
 /* Spin arrow style */
 .spin {
     font-size: 18px;
