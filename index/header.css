@@ -15,14 +15,14 @@
     justify-content: flex-end;
 }
 .header__logo {
-    max-width: 25%;
+    min-width: 25%;
     padding-right: 60px;
     width: 100%;
     max-height: 150px;
     height: 100%;
 }
 .header__logo-icon {
-    max-width: 600px;
+    max-width: 100%;
     width: 100%;
 }
 .header__content {
@@ -72,6 +72,7 @@
     max-width: 70%;
 }
 .nav__item {
+    text-transform: uppercase;
     position: relative;
     display: flex;
     justify-content: center;
@@ -81,9 +82,12 @@
 .nav__item.active {
     background-color: #73b711;
 }
-
+.nav__special {
+    min-width: 15%;
+}
 .reservation {
-    font-family: Roboto;
+    padding-left: 5%;
+    font-family: "Roboto";
     pointer-events: all;
     display: grid;
     place-items: center; /* Centers both axes */
@@ -166,6 +170,7 @@
     font-family: "Rubik";
     font-weight: 600;
     margin-bottom: 5%;
+    font-family: "Roboto";
 }
 .nav-lang__item.active {
     color: #73b711;

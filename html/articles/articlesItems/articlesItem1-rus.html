@@ -5,8 +5,136 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="articlesItem.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+        </style>
     </head>
     <body>
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__content">
+                    <a href="" class="header__adress"
+                        >ул. Мармора, 4578, Глазго D04 89GR</a
+                    >
+                    <a href="" class="header__phone">800 2345-6789</a>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation Section -->
+        <div class="sticky-container" style="z-index: 4">
+            <nav class="nav">
+                <div class="nav__container">
+                    <ul class="nav__list">
+                        <a href="/index-rus.html" class="header__logo">
+                            <img
+                                src="/img/CarLogoCut.png"
+                                alt="logo"
+                                class="header__logo-icon"
+                            />
+                        </a>
+                        <li class="nav__item active">
+                            <a href="/index-rus.html" class="nav__link"
+                                >ГЛАВНАЯ</a
+                            >
+                        </li>
+                        <li class="nav__item nav__special">
+                            <a
+                                href="/html/about/about-rus.html"
+                                class="nav__link"
+                                >О НАС</a
+                            >
+                        </li>
+
+                        <li class="nav__item dropdown">
+                            <a href="#service" class="nav__link">
+                                УСЛУГИ
+                                <span class="spin">></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/html/services/diagnostic-rus.html"
+                                        >Диагностика</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/html/services/transmission-rus.html"
+                                        >Ремонт АКПП/МКПП</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/oilRepair-rus.html"
+                                        >Замена масла</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/brake-rus.html"
+                                        >Тормозная система
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/html/services/steetingWheel-rus.html"
+                                        >Рулевое управление
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/html/services/exaust-rus.html"
+                                        >Выхлопная система
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="/html/services/suspensionGeometry-rus.html"
+                                        >Развал-схождение</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/tire-rus.html"
+                                        >Шиномонтаж</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item">
+                            <a
+                                href="/html/contact/contact-rus.html"
+                                class="nav__link"
+                                >КОНТАКТЫ</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="/html/articles/articlesList-rus.html"
+                                class="nav__link"
+                                >блог</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="reservation">
+                        <a href="" class="reservation__button"
+                            >Записаться на сервис</a
+                        >
+                    </div>
+                    <ul class="nav-lang">
+                        <a href="articlesItem1.html" class="nav-lang__item"
+                            >АНГЛ</a
+                        >
+                        <a href="articlesItem1.html" class="nav-lang__item"
+                            >РУС</a
+                        >
+                        <a href="/index-cz.html" class="nav-lang__item">ЧЕХ</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <section class="articles-item__main">
             <div class="articles-item__container">
                 <h1 class="articles-item__title">

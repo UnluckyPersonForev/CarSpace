@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         .main__info {
             position: relative;
-            z-index: 2;
+            z-index: 1;
         }
     `;
     document.head.appendChild(style);

@@ -1,18 +1,21 @@
 .articles {
+    padding-top: 12%;
     background-color: #494949;
+    padding-bottom: 20%;
 }
 .articles__container {
     padding-left: 20px;
     padding-right: 20px;
 }
 .articles__title {
+    padding-left: 10%;
     color: white;
     padding-top: 5%;
     padding-bottom: 10%;
     font-style: normal;
     font-family: "Rubik";
     font-weight: 650;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 .aricles__list {
     display: flex;

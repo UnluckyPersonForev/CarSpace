@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Блог</title>
+        <title>Blog</title>
         <link rel="stylesheet" href="/html/articles/articles.css" />
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
@@ -14,23 +14,24 @@
         />
     </head>
     <body>
-        <!-- Header Section -->
+        <!-- Sekce záhlaví -->
         <header class="header">
             <div class="header__container">
                 <div class="header__content">
                     <a href="" class="header__adress"
-                        >ул. Мармора, 4578, Глазго D04 89GR</a
+                        >Marmora St, 4578, Glasgow D04 89GR</a
                     >
                     <a href="" class="header__phone">800 2345-6789</a>
                 </div>
             </div>
         </header>
-        <!-- Navigation Section -->
+
+        <!-- Sekce navigace -->
         <div class="sticky-container" style="z-index: 4">
             <nav class="nav">
                 <div class="nav__container">
                     <ul class="nav__list">
-                        <a href="/index-rus.html" class="header__logo">
+                        <a href="/index.html" class="header__logo">
                             <img
                                 src="/img/CarLogoCut.png"
                                 alt="logo"
@@ -38,66 +39,60 @@
                             />
                         </a>
                         <li class="nav__item">
-                            <a href="/index-rus.html" class="nav__link"
-                                >ГЛАВНАЯ</a
-                            >
+                            <a href="/index.html" class="nav__link">DOMŮ</a>
                         </li>
                         <li class="nav__item nav__special">
-                            <a
-                                href="/html/about/about-rus.html"
-                                class="nav__link"
-                                >О НАС</a
+                            <a href="/html/about/about.html" class="nav__link"
+                                >O NÁS</a
                             >
                         </li>
 
                         <li class="nav__item dropdown">
                             <a href="#service" class="nav__link">
-                                УСЛУГИ
+                                SLUŽBY
                                 <span class="spin">></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="/html/services/diagnostic-rus.html"
-                                        >Диагностика</a
+                                    <a href="/html/services/diagnostic.html"
+                                        >Diagnostika</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/transmission.html"
+                                        >Oprava automatických / manuálních
+                                        převodovek</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/oilRepair.html"
+                                        >Výměna oleje</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/brake.html"
+                                        >Brzdový systém</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/steeringWheel.html"
+                                        >Řízení</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/html/services/exhaust.html"
+                                        >Výfukový systém</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="/html/services/transmission-rus.html"
-                                        >Ремонт АКПП/МКПП</a
+                                        href="/html/services/suspensionGeometry.html"
+                                        >Seřízení geometrie kol</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="/html/services/oilRepair-rus.html"
-                                        >Замена масла</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="/html/services/brake-rus.html"
-                                        >Тормозная система
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/html/services/steetingWheel-rus.html"
-                                        >Рулевое управление
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/html/services/exaust-rus.html"
-                                        >Выхлопная система
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        href="/html/services/suspensionGeometry-rus.html"
-                                        >Развал-схождение</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="/html/services/tire-rus.html"
-                                        >Шиномонтаж</a
+                                    <a href="/html/services/tire.html"
+                                        >Pneuservis</a
                                     >
                                 </li>
                             </ul>
@@ -105,49 +100,45 @@
 
                         <li class="nav__item">
                             <a
-                                href="/html/contact/contact-rus.html"
+                                href="/html/contact/contact.html"
                                 class="nav__link"
-                                >КОНТАКТЫ</a
+                                >KONTAKTY</a
                             >
                         </li>
                         <li class="nav__item active">
                             <a
-                                href="/html/articles/articlesList-rus.html"
+                                href="/html/articles/articlesList.html"
                                 class="nav__link"
-                                >блог</a
+                                >BLOG</a
                             >
                         </li>
                     </ul>
                     <div class="reservation">
                         <a href="" class="reservation__button"
-                            >Записаться на сервис</a
+                            >Objednat službu</a
                         >
                     </div>
                     <ul class="nav-lang">
                         <a href="articlesList.html" class="nav-lang__item"
-                            >АНГЛ</a
+                            >ENG</a
                         >
                         <a href="articlesList-rus.html" class="nav-lang__item"
-                            >РУС</a
+                            >RUS</a
                         >
                         <a href="articlesList-cz.html" class="nav-lang__item"
-                            >ЧЕХ</a
+                            >CZE</a
                         >
                     </ul>
                 </div>
             </nav>
         </div>
+
         <section class="articles">
             <div class="articles__container">
-                <h1 class="articles__title">Блог</h1>
+                <h1 class="articles__title">Blog</h1>
                 <ul class="aricles__list">
                     <ul class="articles__group">
                         <li class="articles__list-item">
-                            <!-- <img
-                                src="/img/transmisionIMG.webp"
-                                alt=""
-                                class="articles__img"
-                            /> -->
                             <div
                                 class="articles__img"
                                 style="
@@ -156,8 +147,8 @@
                                 "
                             ></div>
                             <h2 class="articles__name">
-                                Какой срок службы коробки автомат и как его
-                                увеличить?
+                                Jaká je životnost automatické převodovky a jak
+                                ji prodloužit?
                             </h2>
                             <ul class="info__list">
                                 <ul class="info__list-item">
@@ -166,7 +157,7 @@
                                         alt=""
                                         class="info__icon"
                                     />
-                                    <div class="info__text">04 фев 2023</div>
+                                    <div class="info__text">4. února 2023</div>
                                 </ul>
                                 <ul class="info__list-item">
                                     <img
@@ -174,25 +165,19 @@
                                         alt=""
                                         class="info__icon info_message"
                                     />
-                                    <div class="info__text">20694</div>
+                                    <div class="info__text">20 694</div>
                                 </ul>
                             </ul>
                             <div class="reservation articles__read">
                                 <a
-                                    href="/html/articles/articlesItems/articlesItem1-rus.html"
+                                    href="/html/articles/articlesItems/articlesItem1.html"
                                     class="articles__button reservation__button"
-                                >
-                                    Подробнее</a
+                                    >Číst více</a
                                 >
                             </div>
                         </li>
 
                         <li class="articles__list-item">
-                            <!-- <img
-                                src="/img/oilFIlter.jpg"
-                                alt=""
-                                class="articles__img"
-                            /> -->
                             <div
                                 class="articles__img"
                                 style="
@@ -201,8 +186,8 @@
                                 "
                             ></div>
                             <h2 class="articles__name">
-                                Признаки забитого фильтра в АКПП и низкого
-                                уровня масла
+                                Příznaky ucpaného filtru a nízké hladiny oleje v
+                                automatické převodovce
                             </h2>
                             <ul class="info__list">
                                 <ul class="info__list-item">
@@ -211,7 +196,7 @@
                                         alt=""
                                         class="info__icon"
                                     />
-                                    <div class="info__text">12 янв 2024</div>
+                                    <div class="info__text">12. ledna 2024</div>
                                 </ul>
                                 <ul class="info__list-item">
                                     <img
@@ -219,25 +204,19 @@
                                         alt=""
                                         class="info__icon info_message"
                                     />
-                                    <div class="info__text">42606</div>
+                                    <div class="info__text">42 606</div>
                                 </ul>
                             </ul>
                             <div class="reservation articles__read">
                                 <a
-                                    href="/html/articles/articlesItems/articlesItem2-rus.html"
+                                    href="/html/articles/articlesItems/articlesItem2.html"
                                     class="articles__button reservation__button"
-                                >
-                                    Подробнее</a
+                                    >Číst více</a
                                 >
                             </div>
                         </li>
 
                         <li class="articles__list-item">
-                            <!-- <img
-                                src="/img/manualIMg"
-                                alt=""
-                                class="articles__img"
-                            /> -->
                             <div
                                 class="articles__img"
                                 style="
@@ -246,7 +225,8 @@
                                 "
                             ></div>
                             <h2 class="articles__name">
-                                Дергается АКПП: почему пинается коробка автомат
+                                Rány při řazení automatické převodovky: proč
+                                převodovka cuká?
                             </h2>
                             <ul class="info__list">
                                 <ul class="info__list-item">
@@ -255,7 +235,9 @@
                                         alt=""
                                         class="info__icon"
                                     />
-                                    <div class="info__text">21 дек 2020</div>
+                                    <div class="info__text">
+                                        21. prosince 2020
+                                    </div>
                                 </ul>
                                 <ul class="info__list-item">
                                     <img
@@ -263,26 +245,21 @@
                                         alt=""
                                         class="info__icon info_message"
                                     />
-                                    <div class="info__text">74727</div>
+                                    <div class="info__text">74 727</div>
                                 </ul>
                             </ul>
                             <div class="reservation articles__read">
                                 <a
-                                    href="/html/articles/articlesItems/articlesItem3-rus.html"
+                                    href="/html/articles/articlesItems/articlesItem3.html"
                                     class="articles__button reservation__button"
-                                >
-                                    Подробнее</a
+                                    >Číst více</a
                                 >
                             </div>
                         </li>
                     </ul>
+
                     <ul class="articles__group">
                         <li class="articles__list-item">
-                            <!-- <img
-                                src="/img/manual2.jpg"
-                                alt=""
-                                class="articles__img"
-                            /> -->
                             <div
                                 class="articles__img"
                                 style="
@@ -291,8 +268,8 @@
                                 "
                             ></div>
                             <h2 class="articles__name">
-                                Как проводится диагностика АКПП по всем
-                                правилам?
+                                Jak správně provádět diagnostiku automatické
+                                převodovky?
                             </h2>
                             <ul class="info__list">
                                 <ul class="info__list-item">
@@ -301,7 +278,7 @@
                                         alt=""
                                         class="info__icon"
                                     />
-                                    <div class="info__text">19 окт 2022</div>
+                                    <div class="info__text">19. října 2022</div>
                                 </ul>
                                 <ul class="info__list-item">
                                     <img
@@ -309,25 +286,19 @@
                                         alt=""
                                         class="info__icon info_message"
                                     />
-                                    <div class="info__text">15332</div>
+                                    <div class="info__text">15 332</div>
                                 </ul>
                             </ul>
                             <div class="reservation articles__read">
                                 <a
-                                    href="articlesItems/articlesItem4-rus.html"
+                                    href="articlesItems/articlesItem4.html"
                                     class="articles__button reservation__button"
-                                >
-                                    Подробнее</a
+                                    >Číst více</a
                                 >
                             </div>
                         </li>
 
                         <li class="articles__list-item">
-                            <!-- <img
-                                src="/img/manual3.jpg"
-                                alt=""
-                                class="articles__img"
-                            /> -->
                             <div
                                 class="articles__img"
                                 style="
@@ -336,8 +307,8 @@
                                 "
                             ></div>
                             <h2 class="articles__name">
-                                МКПП, АКПП, вариатор или робот. Что выбрать? Что
-                                лучше?
+                                Manuál, automat, CVT nebo robot? Co zvolit? Co
+                                je lepší?
                             </h2>
                             <ul class="info__list">
                                 <ul class="info__list-item">
@@ -346,7 +317,9 @@
                                         alt=""
                                         class="info__icon"
                                     />
-                                    <div class="info__text">13 июл 2023</div>
+                                    <div class="info__text">
+                                        13. července 2023
+                                    </div>
                                 </ul>
                                 <ul class="info__list-item">
                                     <img
@@ -354,24 +327,19 @@
                                         alt=""
                                         class="info__icon info_message"
                                     />
-                                    <div class="info__text">10760</div>
+                                    <div class="info__text">10 760</div>
                                 </ul>
                             </ul>
                             <div class="reservation articles__read">
                                 <a
-                                    href="articlesItems/articlesItem5-rus.html"
+                                    href="articlesItems/articlesItem5.html"
                                     class="articles__button reservation__button"
-                                >
-                                    Подробнее</a
+                                    >Číst více</a
                                 >
                             </div>
                         </li>
+
                         <li class="articles__list-item">
-                            <!-- <img
-                                src="/img/manual4.jpg"
-                                alt=""
-                                class="articles__img"
-                            /> -->
                             <div
                                 class="articles__img"
                                 style="
@@ -380,7 +348,8 @@
                                 "
                             ></div>
                             <h2 class="articles__name">
-                                10 самых популярных мифов об АКПП
+                                10 nejčastějších mýtů o automatických
+                                převodovkách
                             </h2>
                             <ul class="info__list">
                                 <ul class="info__list-item">
@@ -389,7 +358,9 @@
                                         alt=""
                                         class="info__icon"
                                     />
-                                    <div class="info__text">07 июл 2024</div>
+                                    <div class="info__text">
+                                        7. července 2024
+                                    </div>
                                 </ul>
                                 <ul class="info__list-item">
                                     <img
@@ -397,26 +368,21 @@
                                         alt=""
                                         class="info__icon info_message"
                                     />
-                                    <div class="info__text">2845</div>
+                                    <div class="info__text">2 845</div>
                                 </ul>
                             </ul>
                             <div class="reservation articles__read">
                                 <a
-                                    href="articlesItems/articlesItem6-rus.html"
+                                    href="articlesItems/articlesItem6.html"
                                     class="articles__button reservation__button"
-                                >
-                                    Подробнее</a
+                                    >Číst více</a
                                 >
                             </div>
                         </li>
                     </ul>
+
                     <ul class="articles__group">
                         <li class="articles__list-item">
-                            <!-- <img
-                                src="/img/oilChangeImg.jpg"
-                                alt=""
-                                class="articles__img"
-                            /> -->
                             <div
                                 class="articles__img"
                                 style="
@@ -426,7 +392,7 @@
                                 "
                             ></div>
                             <h2 class="articles__name">
-                                Как часто надо менять масло в АКПП?
+                                Jak často měnit olej v automatické převodovce?
                             </h2>
                             <ul class="info__list">
                                 <ul class="info__list-item">
@@ -435,7 +401,9 @@
                                         alt=""
                                         class="info__icon"
                                     />
-                                    <div class="info__text">11 мая 2025</div>
+                                    <div class="info__text">
+                                        11. května 2025
+                                    </div>
                                 </ul>
                                 <ul class="info__list-item">
                                     <img
@@ -443,24 +411,19 @@
                                         alt=""
                                         class="info__icon info_message"
                                     />
-                                    <div class="info__text">22054</div>
+                                    <div class="info__text">22 054</div>
                                 </ul>
                             </ul>
                             <div class="reservation articles__read">
                                 <a
-                                    href="articlesItems/articlesItem7-rus.html"
+                                    href="articlesItems/articlesItem7.html"
                                     class="articles__button reservation__button"
-                                >
-                                    Подробнее</a
+                                    >Číst více</a
                                 >
                             </div>
                         </li>
+
                         <li class="articles__list-item">
-                            <!-- <img
-                                src="/img/brokenTransmissioin"
-                                alt=""
-                                class="articles__img"
-                            /> -->
                             <div
                                 class="articles__img"
                                 style="
@@ -470,8 +433,7 @@
                                 "
                             ></div>
                             <h2 class="articles__name">
-                                Признаки неисправности автоматической коробки
-                                передач
+                                Příznaky poruchy automatické převodovky
                             </h2>
                             <ul class="info__list">
                                 <ul class="info__list-item">
@@ -480,7 +442,9 @@
                                         alt=""
                                         class="info__icon"
                                     />
-                                    <div class="info__text">27 мар 2024</div>
+                                    <div class="info__text">
+                                        27. března 2024
+                                    </div>
                                 </ul>
                                 <ul class="info__list-item">
                                     <img
@@ -488,24 +452,19 @@
                                         alt=""
                                         class="info__icon info_message"
                                     />
-                                    <div class="info__text">21510</div>
+                                    <div class="info__text">21 510</div>
                                 </ul>
                             </ul>
                             <div class="reservation articles__read">
                                 <a
-                                    href="articlesItems/articlesItem8-rus.html"
+                                    href="articlesItems/articlesItem8.html"
                                     class="articles__button reservation__button"
-                                >
-                                    Подробнее</a
+                                    >Číst více</a
                                 >
                             </div>
                         </li>
+
                         <li class="articles__list-item">
-                            <!-- <img
-                                src="/img/TransmissionArticleImg.jpg"
-                                alt=""
-                                class="articles__img"
-                            /> -->
                             <div
                                 class="articles__img"
                                 style="
@@ -514,8 +473,8 @@
                                 "
                             ></div>
                             <h2 class="articles__name">
-                                Чем отличается вариатор от автомата? Полный
-                                обзор двух популярных видов КПП
+                                Jaký je rozdíl mezi CVT a automatem? Kompletní
+                                přehled dvou oblíbených typů převodovek
                             </h2>
                             <ul class="info__list">
                                 <ul class="info__list-item">
@@ -524,7 +483,9 @@
                                         alt=""
                                         class="info__icon"
                                     />
-                                    <div class="info__text">28 дек 2025</div>
+                                    <div class="info__text">
+                                        28. prosince 2025
+                                    </div>
                                 </ul>
                                 <ul class="info__list-item">
                                     <img
@@ -532,15 +493,14 @@
                                         alt=""
                                         class="info__icon info_message"
                                     />
-                                    <div class="info__text">169756</div>
+                                    <div class="info__text">169 756</div>
                                 </ul>
                             </ul>
                             <div class="reservation articles__read">
                                 <a
                                     href=""
                                     class="articles__button reservation__button"
-                                >
-                                    Подробнее</a
+                                    >Číst více</a
                                 >
                             </div>
                         </li>

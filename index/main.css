@@ -147,6 +147,7 @@ body {
     bottom: 15px;
     width: 100%;
     text-align: center;
+    z-index: 2;
 }
 
 .dot {
@@ -214,7 +215,6 @@ body {
     bottom: 15px;
     width: 100%;
     text-align: center;
-    z-index: 10;
 }
 
 .dot {
