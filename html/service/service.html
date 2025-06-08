@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>service</title>
         <!-- Main CSS file (imports other styles like header.css, main.css, etc.) -->
         <link rel="stylesheet" href="/index/index.css" />
         <!-- Dropdown-specific CSS (separate file) -->
@@ -17,7 +17,7 @@
         </style>
     </head>
     <body>
-        <!-- Header Section -->
+         <!-- Header Section -->
         <header class="header">
             <div class="header__container">
                 <div class="header__content">
@@ -28,8 +28,7 @@
                 </div>
             </div>
         </header>
-        <!-- Navigation Section -->
-        <div class="sticky-container" style="z-index: 200">
+          <div class="sticky-container" style="z-index: 200">
             <nav class="nav">
                 <div class="nav__container">
                     <ul class="nav__list">
@@ -41,7 +40,7 @@
                                 
                             />
                         </a>
-                        <li class="nav__item active ">
+                        <li class="nav__item  ">
                             <a href="" class="nav__link">HOME</a>
                         </li>
                         <li class="nav__item">
@@ -52,8 +51,8 @@
                         
                         
 
-                        <li class="nav__item dropdown">
-                            <a href="/html/service/service.html" class="nav__link">
+                        <li class="nav__item dropdown active">
+                            <a href="/html/service/service.html" class="nav__link ">
                                 SERVICES
                                 <span class="spin">></span>
                             </a>
@@ -64,25 +63,26 @@
                                     >
                                 </li>
                                 <li>
-                                    <a href="./html/services/transmission.html"
+                                    <a href="/html/services/transmission.html"
                                         >Transmission Repair & Maintenance</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="./html/services/oilRepair.html"
+                                    <a href="/html/services/oilRepair.html"
                                         >Oil Change</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="./html/services/brake.html"
+                                    <a href="/html/services/brake.html"
                                         >Brake system
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./html/services/suspension.html"
-                                        >Suspension System (Chassis Components)
-                                    </a>
-                                </li>
+                                 <li>
+                                        <a href="/html/services/suspension.html"
+                                            >Suspension System (Chassis
+                                            Components)
+                                        </a>
+                                    </li>
                                 <li>
                                     <a href="/html/services/steetingWheel.html"
                                         >Steering System Repair
@@ -96,12 +96,12 @@
 
                                 <li>
                                     <a
-                                        href="./html/services/suspensionGeometry.html"
+                                        href="/html/services/suspensionGeometry.html"
                                         >Suspension geometry</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="./html/services/tire.html"
+                                    <a href="/html/services/tire.html"
                                         >Tire fittings</a
                                     >
                                 </li>
@@ -134,45 +134,25 @@
                         >
                     </div>
                     <ul class="nav-lang">
-                        <a href="/index.html" class="nav-lang__item">ENG</a>
-                        <a href="/index-rus.html" class="nav-lang__item">RUS</a>
-                        <a href="/index-cz.html" class="nav-lang__item">CZ</a>
+                        <a href="/html/service/service.html" class="nav-lang__item">ENG</a>
+                        <a href="/html/service/service-rus.html" class="nav-lang__item">RUS</a>
+                        <a href="/html/service/service-cz.html" class="nav-lang__item">CZ</a>
                     </ul>
                 </div>
             </nav>
         </div>
-
-        <!-- Main Section -->
-        <main class="main">
-            <section class="home">
-                <div class="main__info">
-                    <h2 class="main__info_title">Quality car maintenance</h2>
-                    <p class="main__info_text">
-                        Our company offers a full range of car repair and
-                        maintenance services. Our main specialization is
-                        high-quality diagnostics, servicing, and repair of
-                        automatic transmissions for the VAG Group: Volkswagen,
-                        Audi, SEAT, Skoda and other. We work with transmission
-                        manufacturers such as ZF, BorgWarner, and LUK. We provide expert assistance in repairing torque converters, valve bodies, and all modifications of automatic transmissions (DSG, ZF) from manufacturers such as ZF, Volkswagen Group, Audi AG, BorgWarner, and LUK.
-Attention to detail, a personalized approach, experience, and professionalism—combined with state-of-the-art equipment—allow us to deliver top-tier automotive repair services.
-
-
-                    </p>
-                </div>
-                <div class="dots">
-                    <span class="dot active" data-index="0"></span>
-                    <span class="dot" data-index="1"></span>
-                    <span class="dot" data-index="2"></span>
-                </div>
-            </section>
-            <!-- Services Section -->
+           <!-- Services Section -->
+            
             <section class="services" id="service">
+                <div class="services__h2">
+                
+            </div>
                 <div class="servicesContainer">
                     <li class="servicesList">
                         <ul class="servicesListItem">
                             <div class="servicesIcon">
                                 <img
-                                    src="./img/diagnosticsIcon.svg"
+                                    src="/img/diagnosticsIcon.svg"
                                     alt=""
                                     class="servicesIMG"
                                 />
@@ -194,7 +174,7 @@ Attention to detail, a personalized approach, experience, and professionalism—
                         <ul class="servicesListItem">
                             <div class="servicesIcon">
                                 <img
-                                    src="./img/transmissionIcon.svg"
+                                    src="/img/transmissionIcon.svg"
                                     alt=""
                                     class="servicesIMG"
                                 />
@@ -217,7 +197,7 @@ Attention to detail, a personalized approach, experience, and professionalism—
                         <ul class="servicesListItem">
                             <div class="servicesIcon">
                                 <img
-                                    src="./img/oilImg.svg"
+                                    src="/img/oilImg.svg"
                                     alt=""
                                     class="servicesIMG"
                                 />
@@ -240,7 +220,7 @@ Attention to detail, a personalized approach, experience, and professionalism—
                         <ul class="servicesListItem">
                             <div class="servicesIcon">
                                 <img
-                                    src="./img/brakeIcon.svg"
+                                    src="/img/brakeIcon.svg"
                                     alt=""
                                     class="servicesIMG"
                                 />
@@ -306,7 +286,7 @@ Attention to detail, a personalized approach, experience, and professionalism—
                         <ul class="servicesListItem">
                             <div class="servicesIcon">
                                 <img
-                                    src="./img/gearIcon.svg"
+                                    src="/img/gearIcon.svg"
                                     alt=""
                                     class="servicesIMG"
                                 />
@@ -347,171 +327,7 @@ Attention to detail, a personalized approach, experience, and professionalism—
                     </li>
                 </div>
             </section>
-            <!-- Background Section -->
-            <section class="background">
-                <div class="backgroundContainer">
-                    <div class="background__container">
-                        <div class="background__services">
-                            <h2 class="background__services-title">
-                                Automatic Transmission Repair
-                            </h2>
-                            <img
-                                src="/img/background-left.jpg"
-                                alt=""
-                                class="background__services-img"
-                            />
-                            <p class="background__services-text">
-                                We have everything needed for fast and
-                                high-quality repairs: modern equipment and
-                                specialized tools, stable supply of spare parts,
-                                and most importantly - highly qualified and
-                                responsible technicians. These factors combined
-                                with over 20 years of professional experience
-                                guarantee solutions to any automatic
-                                transmission problem.
-                            </p>
-                        </div>
-                        <div class="background__services">
-                            <h2 class="background__services-title">
-                                All Types of Breakdowns
-                            </h2>
-                            <img
-                                src="/img/background-right.jpg"
-                                alt=""
-                                class="background__services-img service-img-2"
-                            />
-                            <p class="background__services-text">
-                                We can fix any transmission problem, even if
-                                you've broken it in half! No matter what caused
-                                the malfunction: failure or wear of mechanical,
-                                hydraulic or electronic components. Often a
-                                problem in one part of the transmission leads to
-                                failure in another, so the sooner you visit a
-                                service center, the less the repair will cost.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="background__description">
-                        <div class="backgroundText">
-                            <div class="backgroundTitle">
-                                Complete Auto Service
-                            </div>
-                            <div class="backgroundParagraph">
-                                <div
-                                    class="backgroundParagraphText"
-                                    style="margin-bottom: 0%"
-                                >
-                                    Car owners typically recognize automatic
-                                    transmission (AT) failures through specific
-                                    symptoms. Most often, the malfunction is
-                                    displayed as an error code by the onboard
-                                    computer that monitors the transmission's
-                                    technical parameters. In addition to
-                                    dashboard warning lights, common symptoms
-                                    include:
-                                </div>
-                                <div class="backgroundParagraphText">
-                                    Jerks or jolts from the automatic
-                                    transmission during vehicle start or gear
-                                    changes;
-                                </div>
-                                <div class="backgroundParagraphText">
-                                    Gear slipping, sticking, or complete
-                                    disengagement of one or more gears; An
-                                    unusual burning smell or odor of melted
-                                    rubber/plastic from the transmission;
-                                </div>
-                                <div class="backgroundParagraphText">
-                                    Fluid leaks (oil spots on the ground under
-                                    the vehicle);
-                                </div>
-                                <div class="backgroundParagraphText">
-                                    Complete vehicle failure. Even minor
-                                    symptoms or any unusual vehicle behavior
-                                    indicate the need for immediate professional
-                                    automatic transmission repair. Remember,
-                                    timely maintenance, repairs, or part
-                                    replacements can save on labor costs and
-                                    preserve your transmission without major
-                                    overhauls.
-                                </div>
-                            </div>
-                            <a href="" class="backgroundButton">read more</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Contact Section -->
-            <section class="contact">
-                <div class="contactContainer">
-                    <div class="contactBackground">
-                        <div class="contactMap"></div>
-                        <iframe
-                            class="map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48593.29572497292!2d-74.46207055355366!3d40.429205657315485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c59a53131045%3A0x7eb0a64df036f72f!2sEast%20Brunswick%2C%20NJ!5e0!3m2!1sen!2sus!4v1707617685262!5m2!1sen!2sus"
-                            style="border: 0"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                    </div>
-                    <div class="contactForm">
-                        <div class="contactInfo">
-                            <div class="contactNumber contactPhoneNumber">
-                                800 2345-6789
-                            </div>
-                            <div class="contactAdress">
-                                4578 Marmora Road, Glasgow D04 89GR
-                            </div>
-                        </div>
-                        <form
-                            action="./send_mail.php"
-                            method="POST"
-                            class="contact"
-                        >
-                            <div class="form__name">
-                                <h2 class="form-name__h2">Name</h2>
-                                <input
-                                    placeholder="Your name"
-                                    type="text"
-                                    name="name"
-                                    class="input__name"
-                                    required
-                                />
-                            </div>
-                            <div class="form__gmail">
-                                <h2 class="form-name__h2">
-                                    Your email address
-                                </h2>
-                                <input
-                                    placeholder="Your email address"
-                                    type="text"
-                                    name="gmail"
-                                    class="input__gmail"
-                                    required
-                                />
-                            </div>
-                            <div class="form__message">
-                                <h2 class="form-name__h2">Message</h2>
-                                <textarea
-                                    name="message"
-                                    class="input__message"
-                                    cols="60"
-                                    rows="7"
-                                    placeholder="Enter your message"
-                                    required
-                                ></textarea>
-                            </div>
-                            <button type="submit" class="contactButton">
-                                Submit
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
+             <footer class="footer">
             <div class="footer__container">
                 <div class="footer-left">
                     <h1 class="h2-above">Open Hours</h1>
@@ -575,7 +391,5 @@ Attention to detail, a personalized approach, experience, and professionalism—
                 </div>
             </div>
         </footer>
-        <!-- External JavaScript -->
-        <script src="./index.js"></script>
     </body>
 </html>

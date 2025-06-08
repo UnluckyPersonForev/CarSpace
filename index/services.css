@@ -4,7 +4,9 @@
 }
 .servicesContainer {
 }
-
+.services__h2 {
+    padding-top: 5%;
+}
 .servicesList {
     padding: 25vh 20px;
     position: relative;
