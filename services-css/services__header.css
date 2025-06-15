@@ -3,6 +3,7 @@
 @import url(../index/no-margind.css);
 @import url(../index/header.css);
 @import url(/index/font.css);
+@import url(/index/footer.css);
 
 /* .montserrat {
     font-family: "Montserrat", sans-serif;
@@ -18,7 +19,6 @@
 
 .mainServices {
     background: url(/img/background-main-services.jpg) no-repeat center / cover;
-    padding-bottom: 30vh;
 }
 .header-bottom {
     padding-top: 25%;

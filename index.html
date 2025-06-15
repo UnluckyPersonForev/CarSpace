@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>autoservice</title>
         <!-- Main CSS file (imports other styles like header.css, main.css, etc.) -->
         <link rel="stylesheet" href="/index/index.css" />
         <!-- Dropdown-specific CSS (separate file) -->
@@ -15,16 +15,19 @@
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
         </style>
+        <link rel="icon" href="/img/CarLogo.png" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/img/CarLogo.png">
+        <link rel="icon" href="/img/CarLogo.png" type="image/x-icon">
     </head>
     <body>
         <!-- Header Section -->
         <header class="header">
             <div class="header__container">
                 <div class="header__content">
-                    <a href="" class="header__adress"
-                        >4578 Marmora Road, Glasgow D04 89GR</a
+                    <a href="https://www.google.com/maps/place/Chudenick%C3%A1+1059%2F30,+102+00+Praha+10,+Czechia/data=!4m2!3m1!1s0x470b92436074673b:0x51fbdfb7dbdc44e?sa=X&ved=1t:242&ictx=111" class="header__adress"
+                        >Chudenická 1059/30, Hostivař, 102 00 Praha 10</a
                     >
-                    <a href="" class="header__phone">800 2345-6789</a>
+                    <a href="tel:+420725744669" class="header__phone">+420 725 744 669</a>
                 </div>
             </div>
         </header>
@@ -59,49 +62,57 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="/html/services/diagnostic.html"
+                                    <a href="/html/services/diagnostic.html" class="servicesText"
                                         >Diagnostic Services</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="./html/services/transmission.html"
+                                        <a
+                                            href="/html/services/chip.html"
+                                            class="servicesText"
+                                            >Chip tuning and ECU flashing
+                                            services</a
+                                        >
+                                    </li>
+                                <li>
+                                    <a href="./html/services/transmission.html" class="servicesText"
                                         >Transmission Repair & Maintenance</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="./html/services/oilRepair.html"
+                                    <a href="./html/services/oilRepair.html" class="servicesText"
                                         >Oil Change</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="./html/services/brake.html"
+                                    <a href="./html/services/brake.html" class="servicesText"
                                         >Brake system
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./html/services/suspension.html"
+                                    <a href="/html/services/suspension.html" class="servicesText"
                                         >Suspension System (Chassis Components)
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/html/services/steetingWheel.html"
+                                    <a href="/html/services/steetingWheel.html" class="servicesText"
                                         >Steering System Repair
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/html/services/exaust.html"
+                                    <a href="/html/services/exaust.html" class="servicesText"
                                         >Exhaust System Repair
                                     </a>
                                 </li>
 
                                 <li>
                                     <a
-                                        href="./html/services/suspensionGeometry.html"
+                                        href="./html/services/suspensionGeometry.html" class="servicesText"
                                         >Suspension geometry</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="./html/services/tire.html"
+                                    <a href="./html/services/tire.html" class="servicesText"
                                         >Tire fittings</a
                                     >
                                 </li>
@@ -113,17 +124,18 @@
                             >
                         </li> -->
                         <li class="nav__item">
+                            <a href="/html/articles/articlesList.html" class="nav__link"
+                                >BLOG</a
+                            >
+                        </li>
+                        <li class="nav__item">
                             <a
                                 href="/html/contact/contact.html "
                                 class="nav__link"
                                 >CONTACTS</a
                             >
                         </li>
-                        <li class="nav__item">
-                            <a href="/html/articles/articlesList.html" class="nav__link"
-                                >BLOG</a
-                            >
-                        </li>
+                        
                        
                         
                     </li>
@@ -172,7 +184,7 @@ Attention to detail, a personalized approach, experience, and professionalism—
                         <ul class="servicesListItem">
                             <div class="servicesIcon">
                                 <img
-                                    src="./img/diagnosticsIcon.svg"
+                                    src="/img/diagnosticsIcon.svg"
                                     alt=""
                                     class="servicesIMG"
                                 />
@@ -186,6 +198,25 @@ Attention to detail, a personalized approach, experience, and professionalism—
                             </div>
                             <a
                                 href="/html/services/diagnostic.html"
+                                class="servicesButton"
+                            >
+                                read more
+                            </a>
+                        </ul>
+                        <ul class="servicesListItem">
+                            <div class="servicesIcon">
+                                <img
+                                    src="/img/chip-icon.svg"
+                                    alt=""
+                                    class="servicesIMG"
+                                />
+                            </div>
+                            <div class="servicesTitle">Chip tuning and ECU flashing services</div>
+                            <div class="servicesText">
+                               Car tuning involves modifying the engine's software to enhance performance, improve throttle response, and optimize fuel efficiency.
+                            </div>
+                            <a
+                                href="/html/services/chip.html"
                                 class="servicesButton"
                             >
                                 read more
@@ -449,7 +480,7 @@ Attention to detail, a personalized approach, experience, and professionalism—
                         <div class="contactMap"></div>
                         <iframe
                             class="map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48593.29572497292!2d-74.46207055355366!3d40.429205657315485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c59a53131045%3A0x7eb0a64df036f72f!2sEast%20Brunswick%2C%20NJ!5e0!3m2!1sen!2sus!4v1707617685262!5m2!1sen!2sus"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.1234567890123!2d14.513210!3d50.042930!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94bf1234567%3A0xabcdef1234567890!2sChudenick%C3%A1%201059%2F30%2C%20102%2000%20Praha%2010!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
                             style="border: 0"
                             allowfullscreen=""
                             loading="lazy"
@@ -459,10 +490,10 @@ Attention to detail, a personalized approach, experience, and professionalism—
                     <div class="contactForm">
                         <div class="contactInfo">
                             <div class="contactNumber contactPhoneNumber">
-                                800 2345-6789
+                                +420 725 744 669
                             </div>
                             <div class="contactAdress">
-                                4578 Marmora Road, Glasgow D04 89GR
+                               Chudenická 1059/30, Hostivař, 102 00 Praha 10
                             </div>
                         </div>
                         <form
@@ -538,6 +569,46 @@ Attention to detail, a personalized approach, experience, and professionalism—
                         </li>
                     </ul>
                 </div>
+                <div class="footer-middle">
+                    <h2 class="footer-middle__title">Our Partners</h2>
+                    <ul class="footer-middle__list">
+                      <a href="https://rimarauto.lv/amt">
+                        <li class="footer-middle__list-item" >
+                            <img src="/img/partner1.webp" alt="" class="footer-middle__logo">
+                        </li>
+                      </a>
+                      <a href="https://www.tiktok.com/@aleksandrodessa1997?_t=ZN-8xC8gASp4VS&_r=1">
+                        <li class="footer-middle__list-item" >
+                            <img src="/img/partner2.jpeg" alt="" class="footer-middle__logo">
+                        </li>
+                      </a>
+                      <a href="https://transtec.com/">
+                        <li class="footer-middle__list-item" >
+                            <img src="/img/partner3.webp" alt="" class="footer-middle__logo">
+                        </li>
+                      </a>
+                       <a href="https://akpp.com.ua/">
+                        <li class="footer-middle__list-item" >
+                            <img src="/img/partner4.png" alt="" class="footer-middle__logo">
+                        </li>
+                      </a>
+                       <a href="https://www.sonnax.com/">
+                        <li class="footer-middle__list-item" >
+                            <img src="/img/partner5.png" alt="" class="footer-middle__logo">
+                        </li>
+                      </a>
+                      <a href="https://www.automaticchoice.com/en-us">
+                        <li class="footer-middle__list-item" >
+                            <img src="/img/partner6.png" alt="" class="footer-middle__logo">
+                        </li>
+                      </a>
+                       <a href="https://provaggarage.com/sobre-la-tienda">
+                        <li class="footer-middle__list-item" >
+                            <img src="/img/partner7.png" alt="" class="footer-middle__logo">
+                        </li>
+                      </a>
+                    </ul>
+                </div>
                 <div class="footer-right">
                     <div class="footer-right__logo">
                         <img
@@ -549,26 +620,40 @@ Attention to detail, a personalized approach, experience, and professionalism—
                     <div class="footer-right__get-in-touch">
                         <h4 class="h4-getintocuh">Get in Touch:</h4>
                         <h4 class="footer-right__phone-number">
-                            (888) 988-1001
+                            +420 725 744 669
                         </h4>
                         <h4 class="footer-right__email">
-                            some_gmail@yahoo.com
+                            servis@procarspace.cz
                         </h4>
                     </div>
                     <div class="footer-right__follow-us">
                         <h2 class="follow-us">Follow Us</h2>
-                        <a href="" class="facebook">
+                        <a href="https://www.facebook.com/profile.php?id=61575338031475&rdid=H0WNHY5fUJ8W0Icz#" class="instagram">
                             <img
                                 src="/img/facebook-icon.svg"
                                 alt=""
                                 class="facebook-link"
                             />
                         </a>
-                        <a href="" class="instagram">
+                        <a href="https://www.instagram.com/procarspace?igsh=eXFoZGptMjlwaHVr&utm_source=ig_contact_invite" class="instagram">
                             <img
                                 src="/img/instagram-icon.svg"
                                 alt=""
                                 class="instagram-link"
+                            />
+                        </a>
+                        <a href="https://www.tiktok.com/@procarspace?_t=ZN-8xEFfxidRJe&_r=1" class="instagram">
+                            <img
+                                src="/img/tiktok-icon.svg"
+                                alt=""
+                                class="facebook-link"
+                            />
+                        </a>
+                        <a href="whatsapp://send?phone=+420725744669" class="instagram">
+                            <img
+                                src="/img/whatsapp-icon.svg"
+                                alt=""
+                                class="facebook-link"
                             />
                         </a>
                     </div>
