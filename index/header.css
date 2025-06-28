@@ -69,7 +69,7 @@
 }
 .nav__list {
     display: flex;
-    max-width: 70%;
+    /* max-width: 70%; */
 }
 .nav__item {
     text-transform: uppercase;
@@ -348,4 +348,54 @@
 
 body {
     position: relative;
+}
+
+@media (max-width: 1214px) {
+    .header__logo {
+        background: url(/img/CarLogoCut.png) center/cover;
+        padding: 2px 0px;
+    }
+
+    .header__logo-icon {
+        display: none;
+    }
+    .nav__container {
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+    }
+    .nav__list {
+        width: 100%;
+        max-width: 900px;
+    }
+    .nav__link {
+        font-size: 14px;
+    }
+    .reservation {
+        padding-left: 5px;
+    }
+
+    .nav-lang {
+        max-width: max-content;
+    }
+    .reservation {
+        padding-left: 100px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1054px) {
+    .nav__container {
+    }
+    .nav__item {
+        display: none;
+    }
+    .header__logo {
+        max-width: 120px;
+        min-width: 120px;
+    }
+    .nav__list {
+        max-width: max-content;
+        padding-right: 40%;
+    }
 }
