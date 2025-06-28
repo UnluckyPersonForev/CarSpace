@@ -187,3 +187,85 @@
 .backgroundButton:hover::before {
     opacity: 1;
 }
+
+
+
+
+/* Screen Size Responsiveness */
+
+@media(max-width: 1200px){
+    .background__services-title{
+        font-size: 2.4rem;
+    }
+    .backgroundParagraphText{
+        font-size: 1rem;
+        margin-bottom: 2.5%;
+    }
+    .background__services-text{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 1024px){
+    .backgroundContainer{
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .background__container{
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .background__services-title{
+        font-size: 2.9rem;
+    }
+    .background__services-text{
+        font-size: 1.2rem;
+    }
+    .background__description{
+        max-width: 100%;
+    }
+    .backgroundTitle{
+        font-size: 3.2rem;
+    }
+    .backgroundParagraph{
+        margin-bottom: 15%;
+    }
+    .backgroundParagraphText{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media(max-width: 768px){
+    .background__services-title{
+        font-size: 2.3rem;
+    }
+    .background__services-text{
+        font-size: 1rem;
+    }
+    .backgroundTitle{
+        font-size: 2.5rem;
+    }
+    .backgroundParagraphText{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 600px){
+    .background__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width: 375px){
+.background__services-title{
+    font-size: 2rem;
+}
+.background__services-text{
+    font-size: 0.9rem;
+}
+}

@@ -169,3 +169,52 @@ main.main {
     margin-top: 0 !important;
     padding-top: 0 !important;
 }
+
+
+
+/* Screen size responsiveness */
+
+@media (max-width: 1024px){
+ .servicesTitle{
+    font-size: 1.2rem;
+ }
+ .servicesText{
+    font-size: 0.8rem;
+ }
+}
+
+
+@media (max-width: 768px){
+    .servicesList{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    .servicesListItem{
+        max-width: 250px;
+    }
+    
+}
+@media (max-width: 549px){
+    .servicesListItem{
+        max-width: 300px;
+    }
+     .servicesTitle{
+    font-size: 1.5rem;     
+    }
+    .servicesText{
+    font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px){
+    .servicesListItem{
+        max-width: 275px;
+    }
+     .servicesTitle{
+    font-size: 1.3rem;
+    }
+    .servicesText{
+    font-size: 0.8rem;
+    }
+}

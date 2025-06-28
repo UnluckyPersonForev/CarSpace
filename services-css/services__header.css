@@ -113,3 +113,71 @@
     color: #73b711;
     font-size: 1.2rem;
 }
+
+
+@media(max-width: 1080px){
+    .header_title{
+        font-size: 2.5rem;
+    }
+    .header_img{
+        max-width: 250px;
+    }
+}
+
+@media(max-width: 768px){
+    .header_title{
+        font-size: 2rem;
+    }
+    .header_img{
+        max-width: 150px;
+    }
+    .text_paragraphsFirst{
+        font-size: 1rem;
+    }
+    .paragraph__text{
+        font-size: 13px;
+    }
+    .list-item_text{
+        font-size: 13px;
+    }
+    .list-item_time{
+        font-size: 13px;
+    }
+    .list-item_price{
+        font-size: 13px;
+    }
+    .prices__ul{
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 635px){
+    .header-bottom{
+        flex-direction: column;
+        row-gap: 10px;
+        padding-bottom: 10px;
+    }
+    .header_title{
+        font-size: 1.7rem;
+        max-width: 100%;
+    }
+    .header_img{
+        max-width: 175px;
+    }
+    
+}
+
+@media(max-width: 450px){
+        .paragraph__text{
+            font-size: 12px;
+        }
+        .list-item__font-style{
+            font-size: 12px;
+        }
+        .warning__text{
+            font-size: 13px;
+        }
+        .prices{
+            max-width: 90%;
+        }
+}

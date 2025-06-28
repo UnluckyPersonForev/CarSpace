@@ -18,17 +18,19 @@
     font-size: 5rem;
 }
 .aricles__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 225px;
+    /* display: flex;
+    flex-direction: column; */
+    row-gap: 225px; 
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax( 400px, 1fr)); 
+   margin: 0 auto;
 }
 .articles__group {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.articles__list-item {
-    max-width: 30%;
+.articles__list-item {  
 }
 .articles__img {
     display: block;
@@ -154,4 +156,11 @@
 
 .articles__read {
     display: block;
+}
+
+
+/* Responsive Design */
+
+@media(max-width: 1080px){
+
 }

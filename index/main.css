@@ -122,7 +122,7 @@ body {
     align-items: center;
 }
 .main__info_title {
-    font-size: 2.9rem;
+    font-size: 2.6rem;
     color: white;
     line-height: 120%;
     font-family: "Noto Sans";
@@ -133,7 +133,7 @@ body {
     padding-left: 5%;
 }
 .main__info_text {
-    font-size: 1.1rem;
+    font-size: 1.01rem;
     color: white;
     width: 100%;
     line-height: 120%;
@@ -141,6 +141,7 @@ body {
     font-weight: 500;
     max-width: 100%;
     margin-top: 5vh;
+    
 }
 .dots {
     position: absolute;

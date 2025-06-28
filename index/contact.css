@@ -99,3 +99,22 @@
 .contactButton:hover::before {
     opacity: 0;
 }
+
+
+/* Responsive Design */
+
+@media(max-width: 768px){
+.contactContainer{
+    flex-direction: column;
+}
+.contactBackground{
+    max-width: 100%;
+
+}
+.contactBackground{
+    max-width: 100% ;
+}
+.form__message {
+    max-width: 600px;
+}
+}
